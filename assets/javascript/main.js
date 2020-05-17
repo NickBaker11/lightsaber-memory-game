@@ -1,3 +1,6 @@
-$(".lightsaber-handle").click(function(){
-    $(".lightsaber-green-unactive").css("background-color","green")
+$(".lightsaber-handle").click(function() {
+    $(".lightsaber-green").css("height", "100px");
+    setTimeout(function(){ (".lightsaber-green").delay(1000).css;{
+       ( "height", "0px")
+    } });
 });
