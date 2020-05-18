@@ -1,7 +1,10 @@
 body {
   background-color: black;
 }
-
+h1{
+    color: yellow;
+    justify-content: center;
+}
 .lightsabers {
   margin-left: auto;
   margin-right: auto;
