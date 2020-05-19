@@ -16,30 +16,38 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h1>Master the Force and your lightsaber skills!</h1>
+					<h1 class="main-title">Master the Force and your lightsaber skills!</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-6">
-					<button> Light Side </button>
+                <div class="col-12">
+                    <form>
+                        <label class="form-text" for="name">WHAT IS YOUR NAME?</label><br>
+                        <input  class="text-box" type="text" id="name" name="name" placeholder="Lightsaber Learner">
+                    </form>
+				</div>
+				<div class="col-12">
+					<h2 class="question-title">Are you a....</h2>
 				</div>
 				<div class="col-6">
-					<button> Dark Side </button>
+					<button id="ls-btn"> Light Side User </button>
+				</div>
+				<div class="col-6">
+					<button id="ds-btn"> Dark Side User </button>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					name input + output
 				</div>
 			</div>
 
 		</div>
 	</header>
-	<section>
+	<section id="level-1">
 		<div class="container">
 			<div class="row lightsabers">
+            <div> <button id="begin1">Begin!</button></div>
 				<div class="col-1">
-                 <button id="begin1">Begin!</button>
 					<div class="lightsaber-green"></div>
 					<div class="lightsaber-handle-green"></div>
 				</div>
@@ -58,16 +66,47 @@
 			</div>
 		</div>
 		</div>
+	</section>
+    <section id="level-2">
 		<div class="container">
 			<div class="row">
-				<div class="col-4"><button>Level 1</button>
+				<div class="col">
+					<div> <button id="begin1">Begin!</button></div>
+
 				</div>
-				<div class="col-4"><button>Level 2</button>
+			</div>
+			<div class="row lightsabers">
+				<div class="col-1">
+					<div class="lightsaber-green"></div>
+					<div class="lightsaber-handle-green"></div>
+				</div>
+				<div class="col-1">
+					<div class="lightsaber-red"></div>
+					<div class="lightsaber-handle-red"></div>
+				</div>
+				<div class="col-1">
+					<div class="lightsaber-blue"></div>
+					<div class="lightsaber-handle-blue"></div>
+				</div>
+				<div class="col-1">
+					<div class="lightsaber-yellow"></div>
+					<div class="lightsaber-handle-yellow"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row level-btns">
+				<div class="col-4 lvl-1-btn"><button>Level 1</button>
+				</div>
+				<div class="col-4 lvl-2-btn"><button>Level 2</button>
 				</div>
 				<div class="col-4"><button>Level 3</button>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row level-btns">
 				<div class="col-4"><button>Level 4</button>
 				</div>
 				<div class="col-4"><button>Level 5</button>
@@ -89,9 +128,15 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
 	<script src="assets/javascript/main.js"></script>
 </body>
 

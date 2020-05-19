@@ -1,4 +1,24 @@
-// First Sequensce
+// ------------------------------------------------------------- Themes
+
+
+
+$("#ls-btn").click(function() {
+    $("body").css("background-color","blue");
+    $("#ls-btn").hide();
+    $("#ds-btn").hide();
+    $(".question-title").hide();
+});
+$("#ds-btn").click(function() {
+    $("body").css("background-color","red");
+    $("#ls-btn").hide();
+    $("#ds-btn").hide();
+    $(".question-title").hide();
+});
+
+$(".lvl-2-btn").click (function(){
+    $("#level-2").css("display","block");
+})
+// ------------------------------------------------------------- First Sequensce
 
 $("#begin1").click(function() {
   {
@@ -51,10 +71,7 @@ $("#begin1").click(function() {
   }, 12000);
 });
 
-
-
-
-//Lightsaber activate/deactivate function
+//-------------------------------------------------Lightsaber activate/deactivate function for user
 
 $(".lightsaber-handle-green").click(function() {
     $(".lightsaber-green").css("height", "100px");

@@ -1,18 +1,51 @@
-body {
-  background-color: black;
+
+
+#level-2{
+    display: none;
 }
-h1{
+
+/*------------------------------------------------------Themes*/
+body{
+    background-color: lightgrey;
+}
+ls-theme{
+ background-color: blue;
+}
+
+ds-theme{
+    background-color: red;
+}
+
+#ls-btn{
+    float: left;
+}
+#ds-btn{
+    float: right;
+}
+/*------------------------------------------------------Titles*/
+.main-title, .question-title{
     color: yellow;
-    justify-content: center;
+    text-align: center;
 }
+
 .lightsabers {
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
   margin-bottom: 20px;
   min-height: 300px;
+  background-color: black;
 }
 
+form{
+    text-align: center;
+}
+.form-text{
+    color: yellow;
+}
+.text-box{
+    border: none;
+    text-align: center;
+}
+/*------------------------------------------------------Lightsabers colour and transition*/
 .lightsaber-handle-green{
   height: 30px;
   width: 20px;
@@ -105,4 +138,11 @@ h1{
   visibility: visible;
   justify-content: center;
   transition: height 1s ease-in-out;
+}
+
+
+/*--------------------------------------------------Levels Buttons*/
+
+.level-btns{
+   
 }
