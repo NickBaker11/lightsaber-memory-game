@@ -48,6 +48,7 @@ ds-theme{
   margin-bottom: 20px;
   min-height: 300px;
   background-color: black;
+  border-bottom: solid 10px black;
 }
 .name-form-ls, .name-form-ds{
     display: none;
@@ -224,4 +225,8 @@ form{
 .level-btns{
     display: none;
     
+}
+
+#reset1, #reset2, #reset3, #reset4, #reset5, #reset6{
+    visibility: hidden;
 }
