@@ -7,6 +7,7 @@ $("#ls-btn").click(function() {
     $("body").css("background-color","blue");
     $(".welcome").hide();
     $(".name-form-ls").css("display","block")
+     $(".main-title").css("display","block")
      $("#level-1").css("display","block")
     $(".level-btns").css("display","flex")
 });
@@ -14,16 +15,17 @@ $("#ds-btn").click(function() {
     $("body").css("background-color","red");
      $(".welcome").hide();
     $(".name-form-ds").css("display","block")
+     $(".main-title").css("display","block")
      $("#level-1").css("display","block")
     $(".level-btns").css("display","flex")
 
 
 });
 
-//$(".name-sumbit").click(function() {
-  //  $(".level-btns").css("display","block")
-    //    $(".level-1").css("display","block")
-//})
+/*$(".sumbit").click(function() {
+    $(".form-text").hide()
+        $(".text-box").hide()
+})*/
 
 
 // -------------------------------------------------------------Level Buttons
@@ -81,7 +83,7 @@ $(".level-6-btn").click (function(){
 $("#begin1").click(function() {
   {
     $("#begin1").css("visibility","hidden")
-    $("#reset1").css("visibility","visible")
+   // $("#reset1").css("visibility","visible")
     $(".level-1-btn").css("visibility","hidden")
     $(".level-2-btn").css("visibility","hidden")
     $(".level-3-btn").css("visibility","hidden")
@@ -103,8 +105,10 @@ $("#begin1").click(function() {
         $(".lightsaber-green")
           .css("height", "0px");
       }, 2000)
+      
     }
   }, 2000);
+  
 
   setTimeout(function() {
     {
@@ -135,7 +139,21 @@ $("#begin1").click(function() {
       }, 2000)
     }
   }, 8000);
-  $("#reset1").click (function(){$("#begin1").break()
+
+  setTimeout(function(){
+      $("#begin1").css("visibility","visible")
+    $(".level-1-btn").css("visibility","visible")
+    $(".level-2-btn").css("visibility","visible")
+    $(".level-3-btn").css("visibility","visible")
+    $(".level-4-btn").css("visibility","visible")
+    $(".level-5-btn").css("visibility","visible")
+    $(".level-6-btn").css("visibility","visible")
+  }, 10000);
+});
+
+
+/*$("#reset1").click (function(clearTimeout){
+    
     $("#reset1").css("visibility","hidden")
     $("#begin1").css("visibility","visible")
     $(".level-1-btn").css("visibility","visible")
@@ -144,10 +162,7 @@ $("#begin1").click(function() {
     $(".level-4-btn").css("visibility","visible")
     $(".level-5-btn").css("visibility","visible")
     $(".level-6-btn").css("visibility","visible")
-    
-  });
-});
-
+  }); */
 // ------------------------------------------------------------- 2nd Sequence
 $("#begin2").click(function() {
   {
@@ -235,7 +250,8 @@ $("#begin2").click(function() {
   });
 });
 // ------------------------------------------------------------- 3rd Sequence
-$("#begin3").click(function() {{
+$("#begin3").click(function() {
+    {
     $("#begin3").css("visibility","hidden")
     $("#reset3").css("visibility","visible")
     $(".level-1-btn").css("visibility","hidden")
@@ -749,13 +765,19 @@ $(".lightsaber-handle-white").click(function() {
 
 
 
-// let sequence1=  [".lightsaber-handle-red",".lightsaber-handle-green",".lightsaber-handle-blue",".lightsaber-handle-yellow",
-/// ".lightsaber-handle-green"];
-//let  usersequence1 = []
+/* var sequence1=  [".lightsaber-handle-red",".lightsaber-handle-green",".lightsaber-handle-blue",".lightsaber-handle-yellow",
+ ".lightsaber-handle-green"];
+ var  usersequence1 = []
 
-//if(usersequence1===sequence1){ return ("correct")}
-//else{
-//return ("incorrect")
-//};
+if(usersequence1===sequence1){ return alert("correct")}
+else{
+return alert("incorrect")
+};*/
 
- //usersequence1.push(".lightsaber-green-handle");
+
+$(".name-submit").click(function(){
+    $(".form-text").css("visibility", "hidden")
+    $(".name-submit").css("visibility", "hidden")
+    $(".text-box").css("visibility", "hidden")
+    $("#name").css("visibility", "visible")
+});
