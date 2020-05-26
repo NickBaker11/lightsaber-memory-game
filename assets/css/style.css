@@ -38,14 +38,14 @@ ds-theme{
 .main-title{
     color: yellow;
     text-align: center;
-  display: none;
+    display: none;
 }
 .question-title{
     color: yellow;
     text-align: center;
 }
 
-.lightsabers{
+.lightsabers-container{
   justify-content: center;
   margin-bottom: 20px;
   min-height: 300px;
@@ -81,152 +81,83 @@ button{
 }
 
 /*------------------------------------------------------Lightsabers colour and transition*/
-.lightsaber-handle-green{
-  height: 30px;
+.lightsabers{
+  height: 0;
+  width: 19px;
+  filter: blur(2px);
+  border-radius: 10px 10px 0 0;
+  transition: height 1s ease-in-out;
+  position: absolute;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   margin-left: 40%;
+}
+.lightsaber-handles{
+   height: 30px;
   width: 20px;
   background-color: gray;
-  border: solid 2px green;
   cursor: pointer;
   position: absolute;
    bottom: 0;
    display: flex;
    justify-content: center;
+   margin-left: 40%;
 }
 .lightsaber-green {
   background-color: green;
-  height: 0;
-  width: 19px;
-  filter: blur(2px);
-  border-radius: 10px 10px 0 0;
-  transition: height 1s ease-in-out;
-  position: absolute;
-   bottom: 0;
-   display: flex;
-   justify-content: center;
 }
 
+.lightsaber-handle-green{
+  background-color: gray;
+  border: solid 2px green;
+}
 .lightsaber-handle-red {
-  height: 30px;
-  width: 20px;
+
   background-color: gray;
   border: solid 2px red;
-  cursor: pointer;
-  position: absolute;
-   bottom: 0;
 }
 .lightsaber-red{
  background-color: red;
-  height: 0;
-  width: 19px;
-  filter: blur(2px);
-  border-radius: 10px 10px 0 0;
-  justify-content: center;
-  transition: height 1s ease-in-out;
-  position: absolute;
-   bottom: 0;
 }
 
 .lightsaber-handle-blue {
-  height: 30px;
-  width: 20px;
   background-color: gray;
   border: solid 2px blue;
-  cursor: pointer;
-  position: absolute;
-   bottom: 0;
 }
 .lightsaber-blue {
   background-color: blue;
-  height: 0;
-  width: 19px;
-  filter: blur(2px);
-  border-radius: 10px 10px 0 0;
-  justify-content: center;
-  transition: height 1s ease-in-out;
-  position: absolute;
-   bottom: 0;
 }
 
 .lightsaber-handle-yellow {
-  height: 30px;
-  width: 20px;
   background-color: gray;
   border: solid 2px yellow;
-  cursor: pointer;
-  position: absolute;
-   bottom: 0;
 }
 .lightsaber-yellow {
  background-color: yellow;
-  height: 0;
-  width: 19px;
-  filter: blur(2px);
-  border-radius: 10px 10px 0 0;
-  justify-content: center;
-  transition: height 1s ease-in-out;
-  position: absolute;
-   bottom: 0;
 }
 .lightsaber-handle-purple{
- height: 30px;
-  width: 20px;
   background-color: gray;
   border: solid 2px purple;
-  cursor: pointer;
-  position: absolute;
-   bottom: 0;
 }
 .lightsaber-purple{
   background-color: purple;
-  height: 0;
-  width: 19px;
-  filter: blur(2px);
-  border-radius: 10px 10px 0 0;
-  justify-content: center;
-  transition: height 1s ease-in-out;
-  position: absolute;
-   bottom: 0;
+
 }
-.lightsaber-handle-orange{
- height: 30px;
-  width: 20px;
+/*.lightsaber-handle-orange{
   background-color: gray;
   border: solid 2px orange;
-  cursor: pointer;
-  position: absolute;
-   bottom: 0;
 }
 .lightsaber-orange{
   background-color: orange;
-  height: 0;
-  width: 19px;
-  filter: blur(2px);
-  border-radius: 10px 10px 0 0;
-  justify-content: center;
-  transition: height 1s ease-in-out;
-  position: absolute;
-   bottom: 0;
 }
 .lightsaber-handle-white{
- height: 30px;
-  width: 20px;
   background-color: gray;
   border: solid 2px white;
-  cursor: pointer;
-  position: absolute;
-   bottom: 0;
 }
 .lightsaber-white{
   background-color: white;
-  height: 0;
-  width: 19px;
-  filter: blur(2px);
-  border-radius: 10px 10px 0 0;
-  justify-content: center;
-  transition: height 1s ease-in-out;
-  position: absolute;
-   bottom: 0;
-}
+}*/
 
 /*--------------------------------------------------Levels Buttons*/
 

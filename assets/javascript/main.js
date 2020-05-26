@@ -31,52 +31,28 @@ $("#ds-btn").click(function() {
 // -------------------------------------------------------------Level Buttons
 $(".level-1-btn").click (function(){
     $("#level-1").css("display","block");
-    $("#level-2").css("display","none");
-    $("#level-3").css("display","none");
-    $("#level-4").css("display","none");
-    $("#level-5").css("display","none");
-    $("#level-6").css("display","none");
+    $("#level-2, #level-3, #level-4, #level-5, #level-6").css("display","none");
 })
 
 $(".level-2-btn").click (function(){
     $("#level-2").css("display","block");
-    $("#level-1").css("display","none");
-     $("#level-3").css("display","none");
-    $("#level-4").css("display","none");
-    $("#level-5").css("display","none");
-    $("#level-6").css("display","none");
+ $("#level-1, #level-3, #level-4, #level-5, #level-6").css("display","none");
 })
 $(".level-3-btn").click (function(){
     $("#level-3").css("display","block");
-    $("#level-1").css("display","none");
-     $("#level-2").css("display","none");
-    $("#level-4").css("display","none");
-    $("#level-5").css("display","none");
-    $("#level-6").css("display","none");
+    $("#level-1, #level-2, #level-4, #level-5, #level-6").css("display","none");
 })
 $(".level-4-btn").click (function(){
     $("#level-4").css("display","block");
-    $("#level-1").css("display","none");
-     $("#level-2").css("display","none");
-    $("#level-3").css("display","none");
-    $("#level-5").css("display","none");
-    $("#level-6").css("display","none");
+    $("#level-1, #level-2, #level-3, #level-5, #level-6").css("display","none");
 })
 $(".level-5-btn").click (function(){
     $("#level-5").css("display","block");
-    $("#level-1").css("display","none");
-     $("#level-2").css("display","none");
-    $("#level-3").css("display","none");
-    $("#level-4").css("display","none");
-    $("#level-6").css("display","none");
+    $("#level-1, #level-2, #level-3, #level-4, #level-6").css("display","none");
 })
 $(".level-6-btn").click (function(){
     $("#level-6").css("display","block");
-    $("#level-1").css("display","none");
-     $("#level-2").css("display","none");
-    $("#level-3").css("display","none");
-    $("#level-4").css("display","none");
-    $("#level-5").css("display","none");
+    $("#level-1, #level-2, #level-3, #level-4, #level-5").css("display","none");
 })
 
 // ------------------------------------------------------------- 1st Sequence
@@ -84,12 +60,7 @@ $("#begin1").click(function() {
   {
     $("#begin1").css("visibility","hidden")
    // $("#reset1").css("visibility","visible")
-    $(".level-1-btn").css("visibility","hidden")
-    $(".level-2-btn").css("visibility","hidden")
-    $(".level-3-btn").css("visibility","hidden")
-    $(".level-4-btn").css("visibility","hidden")
-    $(".level-5-btn").css("visibility","hidden")
-    $(".level-6-btn").css("visibility","hidden")
+    $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","hidden")
   };
  
   $(".lightsaber-red").css("height", "100px");
@@ -142,12 +113,7 @@ $("#begin1").click(function() {
 
   setTimeout(function(){
       $("#begin1").css("visibility","visible")
-    $(".level-1-btn").css("visibility","visible")
-    $(".level-2-btn").css("visibility","visible")
-    $(".level-3-btn").css("visibility","visible")
-    $(".level-4-btn").css("visibility","visible")
-    $(".level-5-btn").css("visibility","visible")
-    $(".level-6-btn").css("visibility","visible")
+    $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","visible")
   }, 10000);
 });
 
@@ -168,12 +134,7 @@ $("#begin2").click(function() {
   {
     $("#begin2").css("visibility","hidden")
     $("#reset2").css("visibility","visible")
-    $(".level-1-btn").css("visibility","hidden")
-    $(".level-2-btn").css("visibility","hidden")
-    $(".level-3-btn").css("visibility","hidden")
-    $(".level-4-btn").css("visibility","hidden")
-    $(".level-5-btn").css("visibility","hidden")
-    $(".level-6-btn").css("visibility","hidden")
+    $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","hidden")
   }
   $(".lightsaber-purple").css("height", "100px");
   setTimeout(function() {
@@ -238,7 +199,13 @@ $("#begin2").click(function() {
       }, 2000)
     }
   }, 12000);
-  $("#reset2").click (function(){
+
+   setTimeout(function(){
+      $("#begin2").css("visibility","visible")
+    $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","visible")
+  }, 14000);
+});
+ /* $("#reset2").click (function(){
     $("#reset2").css("visibility","hidden")
     $("#begin2").css("visibility","visible")
     $(".level-1-btn").css("visibility","visible")
@@ -247,19 +214,15 @@ $("#begin2").click(function() {
     $(".level-4-btn").css("visibility","visible")
     $(".level-5-btn").css("visibility","visible")
     $(".level-6-btn").css("visibility","visible")
-  });
-});
+  });*/
+
 // ------------------------------------------------------------- 3rd Sequence
 $("#begin3").click(function() {
     {
     $("#begin3").css("visibility","hidden")
     $("#reset3").css("visibility","visible")
-    $(".level-1-btn").css("visibility","hidden")
-    $(".level-2-btn").css("visibility","hidden")
-    $(".level-3-btn").css("visibility","hidden")
-    $(".level-4-btn").css("visibility","hidden")
-    $(".level-5-btn").css("visibility","hidden")
-    $(".level-6-btn").css("visibility","hidden")
+        $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","hidden")
+
   };
   {
     $("#begin3").css("visibility","hidden")
@@ -345,7 +308,12 @@ $("#begin3").click(function() {
       }, 2000)
     }
   }, 16000);
-  $("#reset3").click (function(){
+   setTimeout(function(){
+      $("#begin3").css("visibility","visible")
+    $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","visible")
+  }, 18000);
+});
+ /* $("#reset3").click (function(){
     $("#reset3").css("visibility","hidden")
     $("#begin3").css("visibility","visible")
     $(".level-1-btn").css("visibility","visible")
@@ -354,19 +322,15 @@ $("#begin3").click(function() {
     $(".level-4-btn").css("visibility","visible")
     $(".level-5-btn").css("visibility","visible")
     $(".level-6-btn").css("visibility","visible")
-  });
-});
+  });*/
+
 // ------------------------------------------------------------- 4th Sequence
 $("#begin4").click(function() {
   {
     $("#begin4").css("visibility","hidden")
      $("#reset4").css("visibility","visible")
-    $(".level-1-btn").css("visibility","hidden")
-    $(".level-2-btn").css("visibility","hidden")
-    $(".level-3-btn").css("visibility","hidden")
-    $(".level-4-btn").css("visibility","hidden")
-    $(".level-5-btn").css("visibility","hidden")
-    $(".level-6-btn").css("visibility","hidden")
+        $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","hidden")
+
   }
   $(".lightsaber-green").css("height", "100px");
   setTimeout(function() {
@@ -458,7 +422,11 @@ $("#begin4").click(function() {
       }, 2000)
     }
   }, 18000);
-  $("#reset4").click (function(){
+  setTimeout(function(){
+      $("#begin4").css("visibility","visible")
+    $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","visible")
+  }, 20000);
+  /*$("#reset4").click (function(){
     $("#reset4").css("visibility","hidden")
     $("#begin4").css("visibility","visible")
     $(".level-1-btn").css("visibility","visible")
@@ -467,19 +435,15 @@ $("#begin4").click(function() {
     $(".level-4-btn").css("visibility","visible")
     $(".level-5-btn").css("visibility","visible")
     $(".level-6-btn").css("visibility","visible")
-  });
+  });*/
 });
 // ------------------------------------------------------------- 5th Sequence
 $("#begin5").click(function() {
   {
     $("#begin5").css("visibility","hidden")
      $("#reset5").css("visibility","visible")
-    $(".level-1-btn").css("visibility","hidden")
-    $(".level-2-btn").css("visibility","hidden")
-    $(".level-3-btn").css("visibility","hidden")
-    $(".level-4-btn").css("visibility","hidden")
-    $(".level-5-btn").css("visibility","hidden")
-    $(".level-6-btn").css("visibility","hidden")
+        $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","hidden")
+
   }
   $(".lightsaber-orange").css("height", "100px");
   setTimeout(function() {
@@ -580,7 +544,11 @@ $("#begin5").click(function() {
       }, 2000)
     }
   }, 20000);
-  $("#reset5").click (function(){
+  setTimeout(function(){
+      $("#begin5").css("visibility","visible")
+    $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","visible")
+  }, 22000);
+ /* $("#reset5").click (function(){
     $("#reset5").css("visibility","hidden")
     $("#begin5").css("visibility","visible")
     $(".level-1-btn").css("visibility","visible")
@@ -589,19 +557,15 @@ $("#begin5").click(function() {
     $(".level-4-btn").css("visibility","visible")
     $(".level-5-btn").css("visibility","visible")
     $(".level-6-btn").css("visibility","visible")
-  });
+  });*/
 });
 // ------------------------------------------------------------- 6th Sequence
 $("#begin6").click(function() {
   {
     $("#begin6").css("visibility","hidden")
      $("#reset6").css("visibility","visible")
-    $(".level-1-btn").css("visibility","hidden")
-    $(".level-2-btn").css("visibility","hidden")
-    $(".level-3-btn").css("visibility","hidden")
-    $(".level-4-btn").css("visibility","hidden")
-    $(".level-5-btn").css("visibility","hidden")
-    $(".level-6-btn").css("visibility","hidden")
+        $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","hidden")
+
   }
   $(".lightsaber-purple").css("height", "100px");
   setTimeout(function() {
@@ -711,7 +675,11 @@ $("#begin6").click(function() {
       }, 2000)
     }
   }, 22000);
-  $("#reset6").click (function(){
+  setTimeout(function(){
+      $("#begin6").css("visibility","visible")
+    $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility","visible")
+  }, 24000);
+ /* $("#reset6").click (function(){
     $("#reset6").css("visibility","hidden")
     $("#begin6").css("visibility","visible")
     $(".level-1-btn").css("visibility","visible")
@@ -720,7 +688,7 @@ $("#begin6").click(function() {
     $(".level-4-btn").css("visibility","visible")
     $(".level-5-btn").css("visibility","visible")
     $(".level-6-btn").css("visibility","visible")
-  });
+  });*/
 });
 //-------------------------------------------------Lightsaber activate/deactivate function for user
 
