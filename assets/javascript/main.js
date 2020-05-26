@@ -6,20 +6,12 @@ $(".sumbit").click(function(){
 $("#ls-btn").click(function() {
     $("body").css("background-color","blue");
     $(".welcome").hide();
-    $(".name-form-ls").css("display","block")
-     $(".main-title").css("display","block")
-     $("#level-1").css("display","block")
-    $(".level-btns").css("display","flex")
+     $("#level-1, .main-title, .name-form-ls, .level-btns").show()
 });
 $("#ds-btn").click(function() {
     $("body").css("background-color","red");
      $(".welcome").hide();
-    $(".name-form-ds").css("display","block")
-     $(".main-title").css("display","block")
-     $("#level-1").css("display","block")
-    $(".level-btns").css("display","flex")
-
-
+    $("#level-1, .main-title, .name-form-ds, .level-btns").show()
 });
 
 /*$(".sumbit").click(function() {
@@ -30,31 +22,30 @@ $("#ds-btn").click(function() {
 
 // -------------------------------------------------------------Level Buttons
 $(".level-1-btn").click (function(){
-    $("#level-1").css("display","block");
-    $("#level-2, #level-3, #level-4, #level-5, #level-6").css("display","none");
+    $(".levels").hide();
+    $("#level-1").show();
 })
 
 $(".level-2-btn").click (function(){
-    $("#level-2").css("display","block");
- $("#level-1, #level-3, #level-4, #level-5, #level-6").css("display","none");
+    $(".levels").hide();
+     $("#level-2").show();
 })
 $(".level-3-btn").click (function(){
-    $("#level-3").css("display","block");
-    $("#level-1, #level-2, #level-4, #level-5, #level-6").css("display","none");
+     $(".levels").hide();
+     $("#level-3").show();
 })
 $(".level-4-btn").click (function(){
-    $("#level-4").css("display","block");
-    $("#level-1, #level-2, #level-3, #level-5, #level-6").css("display","none");
+     $("#level-3").show();
+    $(".levels").hide();
 })
 $(".level-5-btn").click (function(){
-    $("#level-5").css("display","block");
-    $("#level-1, #level-2, #level-3, #level-4, #level-6").css("display","none");
+      $(".levels").hide();
+     $("#level-5").show();
 })
 $(".level-6-btn").click (function(){
-    $("#level-6").css("display","block");
-    $("#level-1, #level-2, #level-3, #level-4, #level-5").css("display","none");
+     $(".levels").hide();
+     $("#level-6").show();
 })
-
 // ------------------------------------------------------------- 1st Sequence
 $("#begin1").click(function() {
   {
