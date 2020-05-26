@@ -84,7 +84,7 @@ button{
   position: absolute;
    bottom: 0;
    display: flex;
-   pointer-events: none;
+   /*pointer-events: none;*/
 }
 .lightsaber-green {
   background-color: green;

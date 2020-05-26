@@ -25,7 +25,6 @@ $(".level-1-btn").click (function(){
     $(".levels").hide();
     $("#level-1").show();
 })
-
 $(".level-2-btn").click (function(){
     $(".levels").hide();
      $("#level-2").show();
@@ -687,56 +686,70 @@ $(".lightsaber-handle-green").click(function() {
     $(".lightsaber-green").css("height", "100px");
     setTimeout(function(){  $(".lightsaber-green")
     .css("height", "0px"); }, 2000);
+    usersequence1.push(".lightsaber-handle-green");
+  console.log(usersequence1);
 });
 
 $(".lightsaber-handle-red").click(function() {
     $(".lightsaber-red").css("height", "100px");
     setTimeout(function(){ $(".lightsaber-red")
     .css("height", "0px"); }, 2000);
+    usersequence1.push(".lightsaber-handle-red");
+  console.log(usersequence1);
     });
 
  $(".lightsaber-handle-blue").click(function() {
     $(".lightsaber-blue").css("height", "100px");
     setTimeout(function(){ $(".lightsaber-blue")
     .css("height", "0px"); }, 2000);
+    usersequence1.push(".lightsaber-handle-blue");
+  console.log(usersequence1);
     });
 
  $(".lightsaber-handle-yellow").click(function() {
     $(".lightsaber-yellow").css("height", "100px");
     setTimeout(function(){ $(".lightsaber-yellow")
     .css("height", "0px"); }, 2000);
+    usersequence1.push(".lightsaber-handle-yellow");
+  console.log(usersequence1);
     });
 $(".lightsaber-handle-purple").click(function() {
     $(".lightsaber-purple").css("height", "100px");
     setTimeout(function(){ $(".lightsaber-purple")
     .css("height", "0px"); }, 2000);
+    usersequence1.push(".lightsaber-handle-purple");
+  console.log(usersequence1);
     });
 $(".lightsaber-handle-orange").click(function() {
     $(".lightsaber-orange").css("height", "100px");
     setTimeout(function(){ $(".lightsaber-orange")
     .css("height", "0px"); }, 2000);
+    usersequence1.push(".lightsaber-handle-orange");
+  console.log(usersequence1);
     });
 $(".lightsaber-handle-white").click(function() {
     $(".lightsaber-white").css("height", "100px");
     setTimeout(function(){ $(".lightsaber-white")
     .css("height", "0px"); }, 2000);
+    usersequence1.push(".lightsaber-handle-white");
+  console.log(usersequence1);
     });
 
 
 
-/* var sequence1=  [".lightsaber-handle-red",".lightsaber-handle-green",".lightsaber-handle-blue",".lightsaber-handle-yellow",
+ var sequence1=  [".lightsaber-handle-red",".lightsaber-handle-green",".lightsaber-handle-blue",".lightsaber-handle-yellow",
  ".lightsaber-handle-green"];
  var  usersequence1 = []
-
-if(usersequence1===sequence1){ return alert("correct")}
-else{
-return alert("incorrect")
-};*/
+        if (usersequence1.length = 5);{
+            
+        }
 
 
-$(".name-submit").click(function(){
+
+
+/*$(".name-submit").click(function(){
     $(".form-text").css("visibility", "hidden")
     $(".name-submit").css("visibility", "hidden")
     $(".text-box").css("visibility", "hidden")
     $("#name").css("visibility", "visible")
-});
+});*/

@@ -13,12 +13,17 @@ the activating/deactivating lightsabers and possibly background music.
 ## UX
 
 ## Features
-
+* Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red.
+* Name input- There is a text box where the user can enter their name to be displayed whilst they are playing.
+              the game. Not yet fully implemented.
+* - Levels - Gives the user a greater challenge the higher the level.
 
 ## Future Enhancements
 
 ## Technologies Used
-
+* Bootstrap- https://getbootstrap.com/ - to assist with page layout
+* W3C -https://jigsaw.w3.org/css-validator/ - for validating my code
+* jQuery- https://jquery.com/ - to assist with event handling
 
 ## Testing
 
