@@ -26,6 +26,7 @@ ds-theme{
     border: none;
     padding: 10px;
 }
+
 /*------------------------------------------------------Titles*/
 .welcome{
      color: yellow;
@@ -40,7 +41,9 @@ ds-theme{
     color: yellow;
     text-align: center;
 }
-
+.lsabers{
+    text-align: center;
+}
 .lightsabers-container{
   margin-bottom: 20px;
   min-height: 300px;
@@ -57,14 +60,26 @@ form{
 .text-box{
     border: none;
     text-align: center;
+    background-color: gray;
+    
+}
+::placeholder{
+    color: yellow;
+}
+#name{
+    color: yellow;
+    
 }
 button{
     color: yellow;
     background-color: darkgray;
     border: solid 1px yellow;
     margin-bottom: 5px;
-    align-items: center;
 }
+.begin{
+    text-align: center;
+}
+
 /*------------------------------------------------------Lightsabers colour and transition*/
 .lightsabers{
   height: 0;
@@ -74,7 +89,7 @@ button{
   transition: height 1s ease-in-out;
   position: absolute;
    bottom: 0;
-   display: flex;
+   display: inline-block;
 }
 .lightsaber-handles{
    height: 30px;
@@ -83,7 +98,7 @@ button{
   cursor: pointer;
   position: absolute;
    bottom: 0;
-   display: flex;
+   display: inline-block;
    /*pointer-events: none;*/
 }
 .lightsaber-green {
@@ -91,12 +106,9 @@ button{
 }
 
 .lightsaber-handle-green{
-  background-color: gray;
   border: solid 2px green;
 }
 .lightsaber-handle-red {
-
-  background-color: gray;
   border: solid 2px red;
 }
 .lightsaber-red{
@@ -104,7 +116,6 @@ button{
 }
 
 .lightsaber-handle-blue {
-  background-color: gray;
   border: solid 2px blue;
 }
 .lightsaber-blue {
@@ -112,29 +123,25 @@ button{
 }
 
 .lightsaber-handle-yellow {
-  background-color: gray;
   border: solid 2px yellow;
 }
 .lightsaber-yellow {
  background-color: yellow;
 }
 .lightsaber-handle-purple{
-  background-color: gray;
   border: solid 2px purple;
 }
 .lightsaber-purple{
   background-color: purple;
 
 }
-/*.lightsaber-handle-orange{
-  background-color: gray;
+.lightsaber-handle-orange{
   border: solid 2px orange;
 }
 .lightsaber-orange{
   background-color: orange;
 }
-.lightsaber-handle-white{
-  background-color: gray;
+/*.lightsaber-handle-white{
   border: solid 2px white;
 }
 .lightsaber-white{
@@ -142,7 +149,9 @@ button{
 }*/
 
 /*--------------------------------------------------Levels Buttons*/
-
+.lvl-btns{
+    text-align: center;
+}
 .level-btns{
     display: none;
    color: yellow;
