@@ -2,6 +2,9 @@ $(".sumbit").click(function () {
     $(".text-box").hide()
 })
 // ------------------------------------------------------------- Themes
+$("#audio").click(function () {
+    $(".lssound").play();
+})
 
 $("#ls-btn").click(function () {
     $("body").css("background-color", "blue");
@@ -687,7 +690,7 @@ $(".lightsaber-handle-green").click(function () {
     $(".lightsaber-green").css("height", "100px");
     setTimeout(function () {
         $(".lightsaber-green")
-        .css("height", "0px");
+            .css("height", "0px");
     }, 2000);
     usersequence1.push(".lightsaber-handle-green");
     console.log(usersequence1);
@@ -697,7 +700,7 @@ $(".lightsaber-handle-red").click(function () {
     $(".lightsaber-red").css("height", "100px");
     setTimeout(function () {
         $(".lightsaber-red")
-        .css("height", "0px");
+            .css("height", "0px");
     }, 2000);
     usersequence1.push(".lightsaber-handle-red");
     console.log(usersequence1);
@@ -707,7 +710,7 @@ $(".lightsaber-handle-blue").click(function () {
     $(".lightsaber-blue").css("height", "100px");
     setTimeout(function () {
         $(".lightsaber-blue")
-        .css("height", "0px");
+            .css("height", "0px");
     }, 2000);
     usersequence1.push(".lightsaber-handle-blue");
     console.log(usersequence1);
@@ -717,7 +720,7 @@ $(".lightsaber-handle-yellow").click(function () {
     $(".lightsaber-yellow").css("height", "100px");
     setTimeout(function () {
         $(".lightsaber-yellow")
-        .css("height", "0px");
+            .css("height", "0px");
     }, 2000);
     usersequence1.push(".lightsaber-handle-yellow");
     console.log(usersequence1);
@@ -726,7 +729,7 @@ $(".lightsaber-handle-purple").click(function () {
     $(".lightsaber-purple").css("height", "100px");
     setTimeout(function () {
         $(".lightsaber-purple")
-        .css("height", "0px");
+            .css("height", "0px");
     }, 2000);
     usersequence1.push(".lightsaber-handle-purple");
     console.log(usersequence1);
@@ -735,7 +738,7 @@ $(".lightsaber-handle-orange").click(function () {
     $(".lightsaber-orange").css("height", "100px");
     setTimeout(function () {
         $(".lightsaber-orange")
-        .css("height", "0px");
+            .css("height", "0px");
     }, 2000);
     usersequence1.push(".lightsaber-handle-orange");
     console.log(usersequence1);
@@ -744,7 +747,7 @@ $(".lightsaber-handle-white").click(function () {
     $(".lightsaber-white").css("height", "100px");
     setTimeout(function () {
         $(".lightsaber-white")
-        .css("height", "0px");
+            .css("height", "0px");
     }, 2000);
     usersequence1.push(".lightsaber-handle-white");
     console.log(usersequence1);
@@ -752,15 +755,79 @@ $(".lightsaber-handle-white").click(function () {
 
 
 
-/*var sequence1 = [".lightsaber-handle-red", ".lightsaber-handle-green", ".lightsaber-handle-blue", ".lightsaber-handle-yellow",
+var sequence1 = [".lightsaber-handle-red", ".lightsaber-handle-green",
+    ".lightsaber-handle-blue", ".lightsaber-handle-yellow",
     ".lightsaber-handle-green"];
-var usersequence1 = []
+var usersequence1 = [];
 
-if (usersequence1.length != sequence1.length){
-    return "false";
-}else {
-    for (var i = 0; i < usersequence1.length; i++){
-        if (sequence1[i] === usersequence1[i]);
+$(".submit").click(function() {
+    if (usersequence1.length != sequence1.length) {
+        alert("Arrays are not equal!");
+    } else {
+        alert("Arrays have the same length");
+        for (var i = 0; i < usersequence1.length; i++) {
+            console.log("i = ", i);
+            console.log("usersequence1 [" + i + "]");
+            console.log("sequence1[" + i + "]");
+            console.log(usersequence1);
+            console.log(sequence1);
+            if (usersequence1[i] == sequence1[i]) {
+                alert(usersequence1[i] + " == " + sequence1[i]);
+            } else {
+                (usersequence1[i] != sequence1[i]);{
+                    alert("wrong");
+                }
+            }
+        }
+    }
+});
 
-        return "True";}
+
+
+
+
+
+/*var length = array_one.length; // same as array_two.length
+
+for (i=0;i<length;i++) {
+
+    console.log("i = ", i);
+    console.log("Now fetching: array_one[" + i + "]")
+    console.log("Now fetching: array_two[" + i + "]")
+
+    var item_array_one = array_one[i];
+    var item_array_two = array_two[i];
+
+    console.log(item_array_one);
+    console.log(item_array_two);
+
+/*var array_one = ["array_one - item 0", "array_one - item 1", "array_one - item 2", "array_one - item 3"]
+var array_two = ["array_two - item 0", "array_two - item 1", "array_two - item 2", "array_two - item 3"]
+
+for (i=0;i<array_one.length;i++) {
+
+    console.log("i = ", i);
+    console.log("Now fetching: array_one[" + i + "]")
+
+    var item = array_one[i];
+
+    console.log(item)
+
+}
+
+
+for (i=0;i<array_two.length;i++) {
+
+    console.log("i = ", i);
+    console.log("Now fetching: array_one[" + i + "]")
+
+    var item = array_two[i];
+
+    console.log(item)
+
+}
+
+
+
+
 }*/

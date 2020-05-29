@@ -5,6 +5,8 @@
 /*------------------------------------------------------Themes*/
 body{
     background-color: lightgrey;
+    max-width: 3000px;
+    margin: auto;
 }
 ls-theme{
  background-color: #2969D6;
@@ -61,7 +63,7 @@ form{
     border: none;
     text-align: center;
     background-color: gray;
-    
+    margin-bottom: 5px;
 }
 ::placeholder{
     color: yellow;

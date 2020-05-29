@@ -11,6 +11,8 @@ play. They will also be able to change between two background themes- Light or D
 the activating/deactivating lightsabers and possibly background music.
 
 ## UX
+This site is aimed at people who would like to play a simple memory gaem and may also have an interest in th Star Wars
+universe.
 
 ## Features
 * Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red.
@@ -42,6 +44,7 @@ Content
 
 
 Media      
+* https://www.soundboard.com/sb/LightsaberSounds for audio effects.
 
 Acknowledgements
 
