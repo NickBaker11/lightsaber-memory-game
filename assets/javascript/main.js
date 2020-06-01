@@ -1,15 +1,11 @@
-$(".sumbit").click(function () {
-    $(".text-box").hide()
-})
 // ------------------------------------------------------------- Themes
-$("#audio").click(function () {
-    $(".lssound").play();
-})
 
+ 
 $("#ls-btn").click(function () {
     $("body").css("background-color", "blue");
     $(".welcome").hide();
     $("#level-1, .main-title, .name-form-ls, .level-btns").show()
+    .sp.play();
 
 });
 $("#ds-btn").click(function () {
@@ -57,7 +53,7 @@ $("#begin1").click(function () {
         $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility", "hidden")
     };
 
-    $(".lightsaber-red").css("height", "100px");
+    $(".lightsaber-red").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-red")
             .css("height", "0px");
@@ -65,7 +61,7 @@ $("#begin1").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -77,7 +73,7 @@ $("#begin1").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -87,7 +83,7 @@ $("#begin1").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -97,7 +93,7 @@ $("#begin1").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -130,7 +126,7 @@ $("#begin2").click(function () {
         $("#reset2").css("visibility", "visible")
         $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility", "hidden")
     }
-    $(".lightsaber-purple").css("height", "100px");
+    $(".lightsaber-purple").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-purple")
             .css("height", "0px");
@@ -138,7 +134,7 @@ $("#begin2").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -148,7 +144,7 @@ $("#begin2").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -158,7 +154,7 @@ $("#begin2").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -168,7 +164,7 @@ $("#begin2").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -177,7 +173,7 @@ $("#begin2").click(function () {
     }, 8000);
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -186,7 +182,7 @@ $("#begin2").click(function () {
     }, 10000);
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -221,7 +217,7 @@ $("#begin3").click(function () {
     {
         $("#begin3").css("visibility", "hidden")
     }
-    $(".lightsaber-red").css("height", "100px");
+    $(".lightsaber-red").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-red")
             .css("height", "0px");
@@ -229,7 +225,7 @@ $("#begin3").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -239,7 +235,7 @@ $("#begin3").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -249,7 +245,7 @@ $("#begin3").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -259,7 +255,7 @@ $("#begin3").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -268,7 +264,7 @@ $("#begin3").click(function () {
     }, 8000);
     setTimeout(function () {
         {
-            $(".lightsaber-purple").css("height", "100px");
+            $(".lightsaber-purple").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-purple")
                     .css("height", "0px");
@@ -277,7 +273,7 @@ $("#begin3").click(function () {
     }, 10000);
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -286,7 +282,7 @@ $("#begin3").click(function () {
     }, 12000);
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -295,7 +291,7 @@ $("#begin3").click(function () {
     }, 14000);
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -326,7 +322,7 @@ $("#begin4").click(function () {
         $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility", "hidden")
 
     }
-    $(".lightsaber-green").css("height", "100px");
+    $(".lightsaber-green").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-green")
             .css("height", "0px");
@@ -334,7 +330,7 @@ $("#begin4").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-orange").css("height", "100px");
+            $(".lightsaber-orange").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-orange")
                     .css("height", "0px");
@@ -344,7 +340,7 @@ $("#begin4").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -354,7 +350,7 @@ $("#begin4").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -364,7 +360,7 @@ $("#begin4").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -373,7 +369,7 @@ $("#begin4").click(function () {
     }, 8000);
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -382,7 +378,7 @@ $("#begin4").click(function () {
     }, 10000);
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -391,7 +387,7 @@ $("#begin4").click(function () {
     }, 12000);
     setTimeout(function () {
         {
-            $(".lightsaber-orange").css("height", "100px");
+            $(".lightsaber-orange").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-orange")
                     .css("height", "0px");
@@ -400,7 +396,7 @@ $("#begin4").click(function () {
     }, 14000);
     setTimeout(function () {
         {
-            $(".lightsaber-purple").css("height", "100px");
+            $(".lightsaber-purple").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-purple")
                     .css("height", "0px");
@@ -409,7 +405,7 @@ $("#begin4").click(function () {
     }, 16000);
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -439,7 +435,7 @@ $("#begin5").click(function () {
         $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility", "hidden")
 
     }
-    $(".lightsaber-orange").css("height", "100px");
+    $(".lightsaber-orange").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-orange")
             .css("height", "0px");
@@ -447,7 +443,7 @@ $("#begin5").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -457,7 +453,7 @@ $("#begin5").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -467,7 +463,7 @@ $("#begin5").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -477,7 +473,7 @@ $("#begin5").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -486,7 +482,7 @@ $("#begin5").click(function () {
     }, 8000);
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -495,7 +491,7 @@ $("#begin5").click(function () {
     }, 10000);
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -504,7 +500,7 @@ $("#begin5").click(function () {
     }, 12000);
     setTimeout(function () {
         {
-            $(".lightsaber-orange").css("height", "100px");
+            $(".lightsaber-orange").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-orange")
                     .css("height", "0px");
@@ -513,7 +509,7 @@ $("#begin5").click(function () {
     }, 14000);
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -522,7 +518,7 @@ $("#begin5").click(function () {
     }, 16000);
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -531,7 +527,7 @@ $("#begin5").click(function () {
     }, 18000);
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -561,7 +557,7 @@ $("#begin6").click(function () {
         $(".level-1-btn, .level-2-btn, .level-3-btn, .level-4-btn, .level-5-btn, .level-6-btn").css("visibility", "hidden")
 
     }
-    $(".lightsaber-purple").css("height", "100px");
+    $(".lightsaber-purple").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-purple")
             .css("height", "0px");
@@ -569,7 +565,7 @@ $("#begin6").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -579,7 +575,7 @@ $("#begin6").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -589,7 +585,7 @@ $("#begin6").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-yellow").css("height", "100px");
+            $(".lightsaber-yellow").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-yellow")
                     .css("height", "0px");
@@ -599,7 +595,7 @@ $("#begin6").click(function () {
 
     setTimeout(function () {
         {
-            $(".lightsaber-white").css("height", "100px");
+            $(".lightsaber-white").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-white")
                     .css("height", "0px");
@@ -608,7 +604,7 @@ $("#begin6").click(function () {
     }, 8000);
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -617,7 +613,7 @@ $("#begin6").click(function () {
     }, 10000);
     setTimeout(function () {
         {
-            $(".lightsaber-orange").css("height", "100px");
+            $(".lightsaber-orange").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-orange")
                     .css("height", "0px");
@@ -626,7 +622,7 @@ $("#begin6").click(function () {
     }, 12000);
     setTimeout(function () {
         {
-            $(".lightsaber-white").css("height", "100px");
+            $(".lightsaber-white").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-white")
                     .css("height", "0px");
@@ -635,7 +631,7 @@ $("#begin6").click(function () {
     }, 14000);
     setTimeout(function () {
         {
-            $(".lightsaber-red").css("height", "100px");
+            $(".lightsaber-red").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-red")
                     .css("height", "0px");
@@ -644,7 +640,7 @@ $("#begin6").click(function () {
     }, 16000);
     setTimeout(function () {
         {
-            $(".lightsaber-green").css("height", "100px");
+            $(".lightsaber-green").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-green")
                     .css("height", "0px");
@@ -653,7 +649,7 @@ $("#begin6").click(function () {
     }, 18000);
     setTimeout(function () {
         {
-            $(".lightsaber-blue").css("height", "100px");
+            $(".lightsaber-blue").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-blue")
                     .css("height", "0px");
@@ -662,7 +658,7 @@ $("#begin6").click(function () {
     }, 20000);
     setTimeout(function () {
         {
-            $(".lightsaber-white").css("height", "100px");
+            $(".lightsaber-white").css("height", "200px");
             setTimeout(function () {
                 $(".lightsaber-white")
                     .css("height", "0px");
@@ -687,7 +683,7 @@ $("#begin6").click(function () {
 //-------------------------------------------------Lightsaber activate/deactivate function for user
 
 $(".lightsaber-handle-green").click(function () {
-    $(".lightsaber-green").css("height", "100px");
+    $(".lightsaber-green").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-green")
             .css("height", "0px");
@@ -697,7 +693,7 @@ $(".lightsaber-handle-green").click(function () {
 });
 
 $(".lightsaber-handle-red").click(function () {
-    $(".lightsaber-red").css("height", "100px");
+    $(".lightsaber-red").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-red")
             .css("height", "0px");
@@ -707,7 +703,7 @@ $(".lightsaber-handle-red").click(function () {
 });
 
 $(".lightsaber-handle-blue").click(function () {
-    $(".lightsaber-blue").css("height", "100px");
+    $(".lightsaber-blue").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-blue")
             .css("height", "0px");
@@ -717,7 +713,7 @@ $(".lightsaber-handle-blue").click(function () {
 });
 
 $(".lightsaber-handle-yellow").click(function () {
-    $(".lightsaber-yellow").css("height", "100px");
+    $(".lightsaber-yellow").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-yellow")
             .css("height", "0px");
@@ -726,7 +722,7 @@ $(".lightsaber-handle-yellow").click(function () {
     console.log(usersequence1);
 });
 $(".lightsaber-handle-purple").click(function () {
-    $(".lightsaber-purple").css("height", "100px");
+    $(".lightsaber-purple").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-purple")
             .css("height", "0px");
@@ -735,7 +731,7 @@ $(".lightsaber-handle-purple").click(function () {
     console.log(usersequence1);
 });
 $(".lightsaber-handle-orange").click(function () {
-    $(".lightsaber-orange").css("height", "100px");
+    $(".lightsaber-orange").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-orange")
             .css("height", "0px");
@@ -744,7 +740,7 @@ $(".lightsaber-handle-orange").click(function () {
     console.log(usersequence1);
 });
 $(".lightsaber-handle-white").click(function () {
-    $(".lightsaber-white").css("height", "100px");
+    $(".lightsaber-white").css("height", "200px");
     setTimeout(function () {
         $(".lightsaber-white")
             .css("height", "0px");
@@ -763,6 +759,7 @@ var usersequence1 = [];
 $(".submit").click(function() {
     if (usersequence1.length != sequence1.length) {
         alert("Arrays are not equal!");
+        console.clear();
     } else {
         alert("Arrays have the same length");
         for (var i = 0; i < usersequence1.length; i++) {
@@ -773,9 +770,11 @@ $(".submit").click(function() {
             console.log(sequence1);
             if (usersequence1[i] == sequence1[i]) {
                 alert(usersequence1[i] + " == " + sequence1[i]);
+                console.clear();
             } else {
                 (usersequence1[i] != sequence1[i]);{
                     alert("wrong");
+                    console.clear();
                 }
             }
         }
@@ -824,10 +823,5 @@ for (i=0;i<array_two.length;i++) {
     var item = array_two[i];
 
     console.log(item)
-
 }
-
-
-
-
 }*/
