@@ -39,7 +39,7 @@ got it wrong.
 
 ## Credits
 Code
-
+* Lines 785-793 in main.js is from W3school https://www.w3schools.com/howto/howto_js_active_element.asp
 
 Content
 

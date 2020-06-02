@@ -1,11 +1,11 @@
 // ------------------------------------------------------------- Themes
 
- 
+
 $("#ls-btn").click(function () {
     $("body").css("background-color", "blue");
     $(".welcome").hide();
     $("#level-1, .main-title, .name-form-ls, .level-btns").show()
-    .sp.play();
+        .sp.play();
 
 });
 $("#ds-btn").click(function () {
@@ -749,8 +749,6 @@ $(".lightsaber-handle-white").click(function () {
     console.log(usersequence1);
 });
 
-
-
 var sequence1 = [".lightsaber-handle-red", ".lightsaber-handle-green",
     ".lightsaber-handle-blue", ".lightsaber-handle-yellow",
     ".lightsaber-handle-green"];
@@ -759,7 +757,6 @@ var usersequence1 = [];
 $(".submit").click(function() {
     if (usersequence1.length != sequence1.length) {
         alert("Arrays are not equal!");
-        console.clear();
     } else {
         alert("Arrays have the same length");
         for (var i = 0; i < usersequence1.length; i++) {
@@ -768,60 +765,29 @@ $(".submit").click(function() {
             console.log("sequence1[" + i + "]");
             console.log(usersequence1);
             console.log(sequence1);
-            if (usersequence1[i] == sequence1[i]) {
-                alert(usersequence1[i] + " == " + sequence1[i]);
-                console.clear();
+            var firstsequence = sequence1.length == usersequence1.length && sequence1.every(function (element, index) {
+                return element === usersequence1[index];
+            });
+            console.log(firstsequence);
+            if (firstsequence = true) {
+                alert("correct");
+
             } else {
-                (usersequence1[i] != sequence1[i]);{
+                (firstsequence = false);{
                     alert("wrong");
-                    console.clear();
+
                 }
             }
         }
     }
 });
 
-
-
-
-
-
-/*var length = array_one.length; // same as array_two.length
-
-for (i=0;i<length;i++) {
-
-    console.log("i = ", i);
-    console.log("Now fetching: array_one[" + i + "]")
-    console.log("Now fetching: array_two[" + i + "]")
-
-    var item_array_one = array_one[i];
-    var item_array_two = array_two[i];
-
-    console.log(item_array_one);
-    console.log(item_array_two);
-
-/*var array_one = ["array_one - item 0", "array_one - item 1", "array_one - item 2", "array_one - item 3"]
-var array_two = ["array_two - item 0", "array_two - item 1", "array_two - item 2", "array_two - item 3"]
-
-for (i=0;i<array_one.length;i++) {
-
-    console.log("i = ", i);
-    console.log("Now fetching: array_one[" + i + "]")
-
-    var item = array_one[i];
-
-    console.log(item)
-
+var btnContainer = document.getElementById("lvl-btns");
+var btns = btnContainer.getElementsByClassName("l-btns");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
-
-
-for (i=0;i<array_two.length;i++) {
-
-    console.log("i = ", i);
-    console.log("Now fetching: array_one[" + i + "]")
-
-    var item = array_two[i];
-
-    console.log(item)
-}
-}*/

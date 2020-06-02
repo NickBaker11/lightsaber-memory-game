@@ -167,15 +167,15 @@ button{
 }*/
 
 /*--------------------------------------------------Levels Buttons*/
-.lvl-btns{
+#lvl-btns{
     text-align: center;
 }
 .level-btns{
     display: none;
    color: yellow;
    }
-
-
+button:focus{outline: none;
+    }
 #reset1, #reset2, #reset3, #reset4, #reset5, #reset6{
     visibility: hidden;
 }
