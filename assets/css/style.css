@@ -2,14 +2,14 @@
 #level-1, #level-2, #level-3, #level-4, #level-5, #level-6, .name-form-ls, .name-form-ds{
     display: none;
 }
-.lssound{
-    display: none;
-}
-
+ .lssoudn{
+     color: blue;
+ }
 
 /*------------------------------------------------------Themes*/
 body{
     background-color: lightgrey;
+    width: 100%;
     max-width: 3000px;
     margin: auto;
     min-width: 350px;
@@ -193,4 +193,19 @@ button:focus{outline: none;
 
 .active{
     border: solid black 2px;
+    color: black;
+}
+.footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+#wookieepedia{
+color: yellow;
+display: none;
+text-decoration: underline;
+}
+.audio{
+    text-align: center;
 }

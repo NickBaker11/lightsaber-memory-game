@@ -15,6 +15,8 @@ This site is aimed at people who would like to play a simple memory game and may
 universe.
 The user will want to play the game and get a response as to whether they entered the correct sequence or if they
 got it wrong.
+There is a link to wookieepedia.com - https://starwars.fandom.com/wiki/Main_Page - for those whose are interested in learning
+ more about the Star Wars Universe.
 ## Features
 * Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red.
 * Name input- There is a text box where the user can enter their name to be displayed whilst they are playing.
@@ -39,7 +41,7 @@ got it wrong.
 
 ## Credits
 Code
-* Lines 785-793 in main.js is from W3school https://www.w3schools.com/howto/howto_js_active_element.asp
+* Lines 785-793 in main.js is from W3school https://www.w3schools.com/howto/howto_js_active_element.asp to add an 'active' button.
 
 Content
 
