@@ -1,5 +1,4 @@
 # Lightsaber Memory Game
-
 This website will be intervactive for the user through the use of a fun memory game that they can play.
 It is based around a sequence of couloured 'lightsabers' which will activate (light up) and then deactivate, in a 
 particular order. The user will then be required to memorise and then successfully copy the sequence by clicking
@@ -17,11 +16,13 @@ The user will want to play the game and get a response as to whether they entere
 got it wrong.
 There is a link to wookieepedia.com - https://starwars.fandom.com/wiki/Main_Page - for those whose are interested in learning
  more about the Star Wars Universe.
+
 ## Features
-* Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red.
+* Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red. Once playing the game the user may switch sides
+                to the alternate theme.
 * Name input- There is a text box where the user can enter their name to be displayed whilst they are playing.
               the game. Not yet fully implemented.
-* Levels - Gives the user a greater challenge the higher the level.
+* Three Levels - Gives the user a greater challenge the higher the level.
 
 ## Future Enhancements
 
@@ -40,14 +41,14 @@ There is a link to wookieepedia.com - https://starwars.fandom.com/wiki/Main_Page
 
 
 ## Credits
-Code
+#### Code
 * Lines 785-793 in main.js is from W3school https://www.w3schools.com/howto/howto_js_active_element.asp to add an 'active' button.
 
-Content
+#### Content
 
 
-Media      
+#### Media      
 * https://www.soundboard.com/sb/LightsaberSounds for audio effects.
 * https://www.bizjournals.com/pacific/news/2020/01/03/pupu-platter-192-star-wars-no-marvel.html for space background image
-Acknowledgements
+#### Acknowledgements
 
