@@ -12,114 +12,118 @@
 </head>
 
 <body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col audio">
-					<audio controls autoplay muted id="lssound">
-						<source src="assets/audio/coolsaber.mp3">
-					</audio>
+	<div class="container" id="background-image">
+		<img id="vader-img" src="assets/images/vader.jpg" alt="">
+		<img id="yoda-img" src="assets/images/yoda.jpg" alt="">
+    </div>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col audio">
+						<audio controls autoplay muted id="lssound">
+							<source src="assets/audio/coolsaber.mp3">
+						</audio>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container welcome">
-			<div class="row">
-				<div class="col-12">
-					<h2 class="welcome-title">WELCOME!</h2>
+			<div class="container welcome">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="welcome-title">WELCOME!</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h2 class="question-title">Are you a....</h2>
+					</div>
+					<div class="col-6">
+						<button id="ls-btn"> Light Side User </button>
+					</div>
+					<div class="col-6">
+						<button id="ds-btn"> Dark Side User </button>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12">
-					<h2 class="question-title">Are you a....</h2>
-				</div>
-				<div class="col-6">
-					<button id="ls-btn"> Light Side User </button>
-				</div>
-				<div class="col-6">
-					<button id="ds-btn"> Dark Side User </button>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1 class="main-title">Master the Force and your lightsaber skills!</h1>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1 class="main-title">Master the Force and your lightsaber skills!</h1>
-				</div>
-			</div>
-		</div>
-		<div class="container name-form-ls">
-			<div class="row">
-				<div class="col-12">
-					<form>
-						<label class="form-text" for="name">WHAT IS YOUR NAME PADAWAN?</label><br>
-						<input  class="text-box" type="text" id="name" name="name" placeholder="Lightsaber Novice"><br>
+			<div class="container name-form-ls">
+				<div class="row">
+					<div class="col-12">
+						<form>
+							<label class="form-text" for="name">WHAT IS YOUR NAME PADAWAN?</label><br>
+							<input class="text-box" type="text" id="name" name="name" placeholder="Lightsaber Novice"><br>
 					</form>
 
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container name-form-ds">
-			<div class="row">
-				<div class="col-12">
-					<form>
-						<label class="form-text" for="name">WHAT IS YOUR NAME APPRENTICE?</label><br>
-						<input  class="text-box" type="text" id="name" name="name" placeholder="Lightsaber Novice"><br>
+			<div class="container name-form-ds">
+				<div class="row">
+					<div class="col-12">
+						<form>
+							<label class="form-text" for="name">WHAT IS YOUR NAME APPRENTICE?</label><br>
+							<input  class="text-box" type="text" id="name" name="name" placeholder="Lightsaber Novice"><br>
 					</form>
+					</div>
 				</div>
 			</div>
-		</div>
 
 
-	</header>
-	<section class="levels" id="level-1">
-		<div class="container begin">
-			<button id="begin1">Begin your training!</button>
-		</div>
-		<div class="container lsabers">
-			<button class="submit1">Submit</button>
-			<div class="row lightsabers-container">
-				<div class="col-4">
-					<div class="lightsabers lightsaber-green"></div>
-					<div class="lightsaber-handles lightsaber-handle-green"></div>
-				</div>
-				<div class="col-4">
-					<div class="lightsabers lightsaber-red"></div>
-					<div class="lightsaber-handles lightsaber-handle-red"></div>
-				</div>
-				<div class="col-4">
-					<div class="lightsabers lightsaber-blue"></div>
-					<div class="lightsaber-handles lightsaber-handle-blue"></div>
+		</header>
+		<section class="levels" id="level-1">
+			<div class="container begin">
+				<button id="begin1">Begin your training!</button>
+			</div>
+			<div class="container lsabers">
+				<button class="submit1">Submit</button>
+				<div class="row lightsabers-container">
+					<div class="col-4">
+						<div class="lightsabers lightsaber-green"></div>
+						<div class="lightsaber-handles lightsaber-handle-green"></div>
+					</div>
+					<div class="col-4">
+						<div class="lightsabers lightsaber-red"></div>
+						<div class="lightsaber-handles lightsaber-handle-red"></div>
+					</div>
+					<div class="col-4">
+						<div class="lightsabers lightsaber-blue"></div>
+						<div class="lightsaber-handles lightsaber-handle-blue"></div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="levels" id="level-2">
-		<div class="container begin">
-			<button id="begin2">Begin your training!</button>
-		</div>
-		<div class="container lsabers">
-			<button class="submit2">Submit</button>
+		</section>
+		<section class="levels" id="level-2">
+			<div class="container begin">
+				<button id="begin2">Begin your training!</button>
+			</div>
+			<div class="container lsabers">
+				<button class="submit2">Submit</button>
 
-			<div class="row lightsabers-container">
-				<div class="col-3">
-					<div class="lightsabers lightsaber-green"></div>
-					<div class="lightsaber-handles lightsaber-handle-green"></div>
-				</div>
-				<div class="col-3">
-					<div class="lightsabers lightsaber-red"></div>
-					<div class="lightsaber-handles lightsaber-handle-red"></div>
-				</div>
-				<div class="col-3">
-					<div class="lightsabers lightsaber-blue"></div>
-					<div class="lightsaber-handles lightsaber-handle-blue"></div>
-				</div>
-				<div class="col-3">
-					<div class="lightsabers lightsaber-yellow"></div>
-					<div class="lightsaber-handles lightsaber-handle-yellow"></div>
+				<div class="row lightsabers-container">
+					<div class="col-3">
+						<div class="lightsabers lightsaber-green"></div>
+						<div class="lightsaber-handles lightsaber-handle-green"></div>
+					</div>
+					<div class="col-3">
+						<div class="lightsabers lightsaber-red"></div>
+						<div class="lightsaber-handles lightsaber-handle-red"></div>
+					</div>
+					<div class="col-3">
+						<div class="lightsabers lightsaber-blue"></div>
+						<div class="lightsaber-handles lightsaber-handle-blue"></div>
+					</div>
+					<div class="col-3">
+						<div class="lightsabers lightsaber-yellow"></div>
+						<div class="lightsaber-handles lightsaber-handle-yellow"></div>
+					</div>
 				</div>
 			</div>
-		</div>
-		</div>
+	</div>
 	</section>
 	<section class="levels" id="level-3">
 		<div class="container begin">
@@ -177,7 +181,7 @@
 		<div class="container footer">
 			<div class="row">
 				<div class="col wookiee">
-                    <p>For more on the Star Wars Universe, follow the link below</p>
+					<p>For more on the Star Wars Universe, follow the link below</p>
 					<a id="wookieepedia" href="https://starwars.fandom.com/wiki/Main_Page"
 						target="_blank">Wookieepedia</a>
 				</div>
@@ -195,6 +199,7 @@
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 	</script>
 	<script src="assets/javascript/main.js"></script>
+
 </body>
 
 </html>

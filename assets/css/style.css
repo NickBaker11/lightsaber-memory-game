@@ -10,9 +10,25 @@ body{
     background-color: lightgrey;
     width: 100%;
     max-width: 3000px;
-    margin: auto;
+    margin: auto 0;
     min-width: 350px;
 }
+
+#background-image{
+    text-align: center;
+}
+#yoda-img, #vader-img{
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    opacity: 0.5;
+    z-index: -1;
+    display: none;
+    max-width: 1000px;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    }
 
 ls-theme{
  background-color: #2969D6;
@@ -216,3 +232,5 @@ p{
 .audio{
     text-align: center;
 }
+
+

@@ -38,7 +38,9 @@ There is a link to wookieepedia.com - https://starwars.fandom.com/wiki/Main_Page
 
 
 ## Deployment
-
+I deployed my website using GitHub. To do this, I went to the settings in my lightsaber-memory-master repository,
+scroll down to the GitHub pages section and click on the 'source' dropdown and selected 'master branch'. GitHub pages
+then generates the URL automatically. Here is the link- https://nickbaker11.github.io/lightsaber-memory-master/
 
 ## Credits
 #### Code

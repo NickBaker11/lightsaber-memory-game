@@ -3,22 +3,23 @@
 $("#ls-btn").click(function () {
     $("body").css("background-color", "blue");
     $(".welcome").hide();
-    $("#level-1, .main-title, .name-form-ls, .level-btns,.wookiee, #wookieepedia, .dsreturn, p").show();
+    $("#level-1, .main-title, .name-form-ls, .level-btns,.wookiee, #wookieepedia, .dsreturn, p, #yoda-img").show();
 });
 $("#ds-btn").click(function () {
     $("body").css("background-color", "red");
     $(".welcome").hide();
-    $("#level-1, .main-title, .name-form-ds, .level-btns, .wookiee, #wookieepedia, .lsreturn, p").show()
+    $("#level-1, .main-title, .name-form-ds, .level-btns, .wookiee, #wookieepedia, .lsreturn, p, #vader-img,").show()
+    $("#vader-img").css("display", "block")
 });
 $(".dsreturn").click(function(){
     $("body").css("background-color", "red");
-    $(".dsreturn, .name-form-ls").hide()
-    $(".lsreturn, .name-form-ds").show()
+    $(".dsreturn, .name-form-ls, #yoda-img").hide()
+    $(".lsreturn, .name-form-ds, #vader-img").show()
 })
 $(".lsreturn").click(function(){
     $("body").css("background-color", "blue");
-    $(".lsreturn, .name-form-ds").hide()
-    $(".dsreturn, .name-form-ls").show()
+    $(".lsreturn, .name-form-ds, #vader-img").hide()
+    $(".dsreturn, .name-form-ls, #yoda-img").show()
 })
 // -------------------------------------------------------------Level Buttons
 $(".level-1-btn").click(function () {
@@ -338,9 +339,9 @@ var sequence1 = [".lightsaber-handle-red", ".lightsaber-handle-green",
     ".lightsaber-handle-blue", ".lightsaber-handle-green"];
 var usersequence1 = [];
 
-$(".submit1").click(function () {
+$(".submit1").click(function() {
     if (usersequence1.length != sequence1.length) {
-        alert("You have not activated the correct number of lightsabers. Try again.");
+        alert("You have not activated the correct number of lightsabers. Try again!");
     } else {
         var your_result = true;
         for (var i = 0; i < usersequence1.length; i++) {
@@ -357,8 +358,8 @@ $(".submit1").click(function () {
             }
         }
         console.log(your_result)
-        if (your_result) { alert("you win"); usersequence1 = [] }
-        else { usersequence1 = []; alert("you lose") }
+        if (your_result) { alert("Well done! Try a harder challenge on the next level."); usersequence1 = [] }
+        else { usersequence1 = []; alert("Failure is not defeat, try again!") }
     }
 });
 //-------------------------------------------------Lightsaber sequences user interaction for level 2
@@ -367,7 +368,7 @@ var sequence2 = [".lightsaber-handle-red", ".lightsaber-handle-yellow",
     ".lightsaber-handle-red", ".lightsaber-handle-green", ".lightsaber-handle-red"];
 var usersequence2 = [];
 
-$(".submit2").click(function () {
+$(".submit2").click(function() {
     if (usersequence2.length != sequence2.length) {
         alert("You have not activated the correct number of lightsabers. Try again.");
     } else {
@@ -386,8 +387,8 @@ $(".submit2").click(function () {
             }
         }
         console.log(your_result2);
-        if (your_result2) { alert("you win"); usersequence2 = [] }
-        else { usersequence2 = []; alert("you lose") }
+        if (your_result2) { alert("Well done! Try a harder challenge on the next level."); usersequence2 = [] }
+        else { usersequence2 = []; alert("Well done! Try a harder challenge on the next level.") }
     }
 });
 //-------------------------------------------------Active buton so user knows whihch level they are on 
