@@ -2,9 +2,6 @@
 #level-1, #level-2, #level-3, .name-form-ls, .name-form-ds{
     display: none;
 }
- .lssoudn{
-     color: blue;
- }
 /*------------------------------------------------------Themes*/
 body{
     background-color: lightgrey;
@@ -13,7 +10,6 @@ body{
     margin: auto 0;
     min-width: 350px;
 }
-
 #background-image{
     text-align: center;
 }
@@ -23,11 +19,10 @@ body{
     width: 50%;
     opacity: 0.5;
     z-index: -1;
-    display: none;
-    max-width: 1000px;
-    text-align: justify;
-    margin-right: auto;
-    margin-left: auto;
+    display: none;    
+    }
+    #yoda-img{
+       text-align: left;
     }
 
 ls-theme{
@@ -75,12 +70,9 @@ ds-theme{
   position: relative;
   contain: content
 }
-.lightsabers-container .sp{
-    width: 100%;
-    height: 100%;
-}
-form{
+.form{
     text-align: center;
+    display: none;
 }
 .form-text{
     color: yellow;
@@ -90,6 +82,10 @@ form{
     text-align: center;
     background-color: gray;
     margin-bottom: 5px;
+    text-decoration: none;
+}
+.text-box:focus{
+    outline: none;
 }
 ::placeholder{
     color: yellow;
@@ -116,12 +112,10 @@ form{
   position: absolute;
    bottom: 0;
    display: inline-block;
-   /*pointer-events: none;*/
 }
 .lightsaber-green {
   background-color: green;
 }
-
 .lightsaber-handle-green{
   border: solid 2px green;
 }
@@ -138,7 +132,6 @@ form{
 .lightsaber-blue {
   background-color: blue;
 }
-
 .lightsaber-handle-yellow {
   border: solid 2px yellow;
 }
@@ -150,7 +143,6 @@ form{
 }
 .lightsaber-purple{
   background-color: purple;
-
 }
 .lightsaber-handle-orange{
   border: solid 2px orange;
@@ -158,12 +150,6 @@ form{
 .lightsaber-orange{
   background-color: orange;
 }
-/*.lightsaber-handle-white{
-  border: solid 2px white;
-}
-.lightsaber-white{
-  background-color: white;
-}*/
 /*-------------------------------------------------- Buttons*/
 button{
     color: yellow;
@@ -199,8 +185,6 @@ button:focus{outline: none;
     border: solid red 5px;
     margin-top: 15px;
 }
-
-
 @media(min-width: 1000px){
     .lightsaber-handles{
         height: 60px;
@@ -209,6 +193,11 @@ button:focus{outline: none;
     .lightsabers{
         width:40px;
         border-radius: 20px 20px 0 0;
+    }
+}
+@media(max-width: 1000px){
+     #background-image{
+        visibility: hidden;
     }
 }
 .footer{

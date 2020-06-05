@@ -1,4 +1,4 @@
-describe("Do my arrays match function", function(){
+describe("Do my arrays match function", function arrayMatch(){
 
 
 var sequence = [".lightsaber-handle-red", ".lightsaber-handle-green",
