@@ -14,14 +14,17 @@
 <body>
 	<div id="background-image">
 		<img id="vader-img" src="assets/images/vader.jpg" alt="">
-		<img id="yoda-img" src="assets/images/yoda.jpg" alt="">
+		<img id="lukesw-img" src="assets/images/lukesw.jpg" alt="">
 		</div>
 		<header>
 			<div class="container">
 				<div class="row">
 					<div class="col audio">
-						<audio controls autoplay muted id="lssound">
+						<audio controls hidden id="lssound">
 							<source src="assets/audio/coolsaber.mp3">
+						</audio>
+                        <audio controls hidden id="dssound">
+							<source src="assets/audio/SaberOn.mp3">
 						</audio>
 					</div>
 				</div>
@@ -37,10 +40,10 @@
 						<h2 class="question-title">Are you a....</h2>
 					</div>
 					<div class="col-6">
-						<button id="ls-btn"> Light Side User </button>
+						<button id="ls-btn" onclick="document.getElementById('dssound').play()"> Light Side User    </button>
 					</div>
 					<div class="col-6">
-						<button id="ds-btn"> Dark Side User </button>
+						<button id="ds-btn" onclick="document.getElementById('lssound').play()"> Dark Side User    </button>
 					</div>
 				</div>
 			</div>
@@ -119,7 +122,6 @@
 					</div>
 				</div>
 			</div>
-	</div>
 	</section>
 	<section class="levels" id="level-3">
 		<div class="container begin">
@@ -154,7 +156,6 @@
 					<div class="lightsaber-handles lightsaber-handle-orange"></div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</section>
 	<section>

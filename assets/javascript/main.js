@@ -1,10 +1,9 @@
 // ------------------------------------------------------------- Themes
-
 $("#ls-btn").click(function () {
     $("body").css("background-color", "blue");
     $(".welcome").hide();
-    $("#level-1, .main-title, .form, .name-form-ls, .level-btns,.wookiee, #wookieepedia, .dsreturn, p, #yoda-img").show();
-    $("#yoda-img").css("display", "flex"); //Display flex added to have image to the left whilst other image remains to right of screen, design choice.
+    $("#level-1, .main-title, .form, .name-form-ls, .level-btns,.wookiee, #wookieepedia, .dsreturn, p, #lukesw-img").show();
+    $("#lukesw-img").css("display", "flex"); //Display flex added to have image to the left whilst other image remains to right of screen, design choice.
     alert("Welcome to the Jedi Acadamy young one. Click 'Begin your training' to be shown the correct sequence. Then you may try to enter the correct seqeunce a hit 'Submit' when you are finished. Good luck!");
 });
 $("#ds-btn").click(function () {
@@ -15,14 +14,14 @@ $("#ds-btn").click(function () {
 });
 $(".dsreturn").click(function(){
     $("body").css("background-color", "red");
-    $(".dsreturn, .name-form-ls, #yoda-img, .name-form-ls").hide()
+    $(".dsreturn, .name-form-ls, #lukesw-img, .name-form-ls").hide()
     $(".lsreturn, .name-form-ds, #vader-img").show()
 })
 $(".lsreturn").click(function(){
     $("body").css("background-color", "blue");
     $(".lsreturn, .name-form-ds, #vader-img").hide()
-    $(".dsreturn, .name-form-ls, #yoda-img").show()
-    $("#yoda-img").css("display", "flex"); //Display flex added to have image to the left whilst other image remains to right of screen, design choice.
+    $(".dsreturn, .name-form-ls, #lukesw-img").show()
+    $("#lukesw-img").css("display", "flex"); //Display flex added to have image to the left whilst other image remains to right of screen, design choice.
 })
 // -------------------------------------------------------------Level Buttons
 $(".level-1-btn").click(function () {
@@ -382,7 +381,7 @@ $(".submit1").click(function() {
     }
 });
 //-------------------------------------------------Lightsaber sequences user interaction for level 2
-var sequence2 = [".lightsaber-handle-red", ".lightsaber-handle-yellow",
+var sequence2 = [".lightsaber-handle-green", ".lightsaber-handle-yellow",
     ".lightsaber-handle-blue", ".lightsaber-handle-yellow",
     ".lightsaber-handle-red", ".lightsaber-handle-green", ".lightsaber-handle-red"];
 var usersequence2 = [];

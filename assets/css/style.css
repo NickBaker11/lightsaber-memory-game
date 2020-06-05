@@ -6,14 +6,13 @@
 body{
     background-color: lightgrey;
     width: 100%;
-    max-width: 3000px;
     margin: auto 0;
     min-width: 350px;
 }
 #background-image{
     text-align: center;
 }
-#yoda-img, #vader-img{
+#lukesw-img, #vader-img{
     position: fixed;
     height: 100%;
     width: 50%;
@@ -21,7 +20,7 @@ body{
     z-index: -1;
     display: none;    
     }
-    #yoda-img{
+    #lukesw-img{
        text-align: left;
     }
 
@@ -54,6 +53,7 @@ ds-theme{
     color: yellow;
     text-align: center;
     display: none;
+    margin-top: 20px;
 }
 .question-title{
     color: yellow;
@@ -221,5 +221,6 @@ p{
 .audio{
     text-align: center;
 }
+
 
 

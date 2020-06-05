@@ -1,4 +1,12 @@
-describe("Do my arrays match function", function arrayMatch(){
+describe("arrayMatch", function(){
+        describe("Array length test", function(){
+            it("should return true", function(){
+                expect (arrayMatch (usersequence, sequence)).toBe(true)
+            })
+        })
+})
+
+  
 
 
 var sequence = [".lightsaber-handle-red", ".lightsaber-handle-green",
@@ -6,9 +14,8 @@ var sequence = [".lightsaber-handle-red", ".lightsaber-handle-green",
     ".lightsaber-handle-blue", ".lightsaber-handle-green"];
 var usersequence = [];
 
-$(".submit1").click(function () {
-    if (usersequence.length != sequence.length) {
-        alert("You have not activated the correct number of lightsabers. Try again.");
+/* if (usersequence.length != sequence.length) {
+    
     } else {
         var your_result = true;
         for (var i = 0; i < usersequence.length; i++) {
@@ -25,7 +32,9 @@ $(".submit1").click(function () {
             }
         }
         console.log(your_result)
-        if (your_result) { alert("you win"); usersequence = [] }
-        else { usersequence = []; alert("you lose") }
+        if (your_result) {  usersequence = [] }
+        else { usersequence = []; }
     }
-});})
+});
+
+*/

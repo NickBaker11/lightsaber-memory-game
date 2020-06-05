@@ -21,7 +21,7 @@ There is a link to wookieepedia.com - https://starwars.fandom.com/wiki/Main_Page
 * Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red. Once playing the game the user may switch sides
                 to the alternate theme.
 * Name input- There is a text box where the user can enter their name to be displayed whilst they are playing.
-              the game. Not yet fully implemented.
+              the game. 
 * Three Levels - Gives the user a greater challenge the higher the level.
 
 ## Future Enhancements
@@ -32,7 +32,7 @@ There is a link to wookieepedia.com - https://starwars.fandom.com/wiki/Main_Page
 * jQuery- https://jquery.com/ - to assist with event handling
 
 ## Testing
-
+* 
 
 
 
@@ -51,6 +51,7 @@ then generates the URL automatically. Here is the link- https://nickbaker11.gith
 
 #### Media      
 * https://www.soundboard.com/sb/LightsaberSounds for audio effects.
-* https://www.bizjournals.com/pacific/news/2020/01/03/pupu-platter-192-star-wars-no-marvel.html for space background image
+* https://www.reddit.com/r/StarWarsBattlefront/comments/97c2g2/am_i_the_only_one_who_thinks_the_yoda_face_in/ for   'yoda.jp'
+* https://www.denofgeek.com/comics/star-wars-marvel-to-explore-darth-vaders-early-days-as-sith-lord/ for             'vader.jpg'
 #### Acknowledgements
 
