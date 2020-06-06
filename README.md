@@ -14,7 +14,8 @@ play. They will also be able to change between two background themes- Light or D
 got it wrong. I would expect the game to run smoothly and to be built so that I cannot break it accidently.
 -As this memory game is themed, I may want to know more about what inspired it.
 #### Wireframe
-
+Here is a link to my wireframe- https://github.com/NickBaker11/lightsaber-memory-master/blob/master/assets/wireframes/Mockup%20Milestone%20Project%20no.2.pdf
+It can also be found in assets/wireframes in my project
 ## Features
 * Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red. Once      playing the game the user may switch sides to the alternate theme.
 * Name input- There is a text box where the user can enter their name to be displayed whilst they are playing.
