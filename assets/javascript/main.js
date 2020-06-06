@@ -1,6 +1,6 @@
 // ------------------------------------------------------------- Themes
 $("#ls-btn").click(function() {
- $("body").css("background-color", "blue");
+ $("body").css("background-color", " rgb(8, 103, 245)");
  $(".welcome").hide();
  $("#level-1, .main-title, .form, .name-form-ls, .level-btns,.wookiee, #wookieepedia, .dsreturn, p, #lukesw-img").show();
  $("#lukesw-img").css("display", "flex"); //Display flex added to have image to the left whilst other image remains to right of screen, design choice.
@@ -9,7 +9,7 @@ $("#ls-btn").click(function() {
  }, 50);
 });
 $("#ds-btn").click(function() {
- $("body").css("background-color", "red");
+ $("body").css("background-color", "rgb(212, 0, 0)");
  $(".welcome, .name-form-ls").hide();
  $("#level-1, .main-title, .form, .name-form-ds, .level-btns, .wookiee, #wookieepedia, .lsreturn, p, #vader-img").show();
  setTimeout(function() {
@@ -17,12 +17,12 @@ $("#ds-btn").click(function() {
  }, 50);
 });
 $(".dsreturn").click(function() {
- $("body").css("background-color", "red");
+ $("body").css("background-color", "rgb(212, 0, 0)");
  $(".dsreturn, .name-form-ls, #lukesw-img, .name-form-ls").hide()
  $(".lsreturn, .name-form-ds, #vader-img").show()
 })
 $(".lsreturn").click(function() {
- $("body").css("background-color", "blue");
+ $("body").css("background-color", " rgb(8, 103, 245)");
  $(".lsreturn, .name-form-ds, #vader-img").hide()
  $(".dsreturn, .name-form-ls, #lukesw-img").show()
  $("#lukesw-img").css("display", "flex"); //Display flex added to have image to the left whilst other image remains to right of screen, design choice.

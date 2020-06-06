@@ -9,18 +9,18 @@ There will be additional intervactivity where the user can input their name whic
 play. They will also be able to change between two background themes- Light or Dark Side. 
 
 ## UX
-This site is aimed at people who would like to play a simple memory game and may also have an interest in the Star Wars universe.
-The user will want to play the game and get a response as to whether they entered the correct sequence or if they
-got it wrong. I tested all sequences and buttons to ensure they work as expected. Some buttons and divs are either hidden or have their pointer events turned off during the sequences to prevent the user from inadvertently ruining their experience.
-There is a link to wookieepedia.com - https://starwars.fandom.com/wiki/Main_Page - for those whose are interested in learning more about the Star Wars Universe.
-
+-As a user I would like to play a memory game that is progressively more challenging.
+-As a user I want to play the game and get a response as to whether I entered the correct sequence or if I
+got it wrong. I would expect the game to run smoothly and to be built so that I cannot break it accidently.
+-As this memory game is themed, I may want to know more about what inspired it.
+#### Wireframe
 
 ## Features
 * Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red. Once      playing the game the user may switch sides to the alternate theme.
 * Name input- There is a text box where the user can enter their name to be displayed whilst they are playing.
   the game. 
 * Three Levels - Gives the user a greater challenge the higher the level.
-
+* A link to the Wookieepedia Star Wars fandom page - https://starwars.fandom.com/wiki/Main_Page
 ## Future Enhancements
 
 ## Technologies Used
@@ -33,16 +33,17 @@ There is a link to wookieepedia.com - https://starwars.fandom.com/wiki/Main_Page
 ## Testing
 #### Maunual Testing
 * Sequences and buttons
-    -Clicking on each of the 'lightsaber-handles' correctly activiates the corresponding 'lightsaber'.
-    -Clicking on each of the 'begin' buttons starts the sequence for the currently visible level.
-    -Clicking each of the 'submit' buttons successfully begins the if else statement to check if the arrays are the same.
-    
+    -Clicking on each of the 'lightsaber-handles' correctly activiates the corresponding 'lightsaber' as expected.
+    -Clicking on each of the 'begin' buttons starts the sequence for the currently visible level as expected.
+    -Clicking each of the 'submit' buttons successfully begins the if else statement to check if the arrays are     the same as expected.
+    -Some buttons either disappear or are disabled before and during the the active sequence. Those that disappear  are the level buttons, the 'begin' buttons and the 'submit' buttons(this is initially hidden anyway but hides  again if the  user starts the sequence again). These are the expected outcomes.
+     The lightsaber handles are disabled during the sequence and when a user moves to another level to prevent any activations that would interrupt the pre set sequence.
 * Links
-    -When clicking on the Wookieepedia link in the footer of each page, it takes you to the Wookiepedia (https://starwars.fandom.com/wiki/Main_Page) page in a new tab.
+    -When clicking on the Wookieepedia link in the footer of each page, it takes you to the Wookiepedia (https://starwars.fandom.com/wiki/Main_Page) page in a new tab as expected.
 * Different screen sizes
     -When reducing or increasing the size of the screen, the text and images adjust so that they are relative to    that screen size.
     -For mobile devices, the background images are removed using a media query as they stretch too much and         distort.
-    -I sent my live link to friends and family, asking them for feedback and screenshots to see how it looked on    their devices with       positive results. This gave me insight on issues to fix for different screen sizes.
+    -I sent my live link to friends and family, asking them for feedback and screenshots to see how it looked on    their devices with positive results. This gave me insight on issues to fix for different screen sizes.
 
 ## Deployment
 I deployed my website using GitHubs GitHub Pages. To do this, I went to the settings in my lightsaber-memory-master repository, scrolled down to the GitHub pages section and click on the 'source' dropdown and selected 'master branch'. GitHub pages then generates the URL automatically. Here is the link- https://nickbaker11.github.io/lightsaber-memory-master/

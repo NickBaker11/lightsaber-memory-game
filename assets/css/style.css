@@ -1,8 +1,7 @@
-
 #level-1, #level-2, #level-3, .name-form-ls, .name-form-ds{
     display: none;
 }
-/*------------------------------------------------------Themes*/
+/*------------------------------------------------------Themes. Yellow and gray were chosen for buttons and text as they are Star Wars colours. Same for red and blue representing the 'light' and 'dark' sides. I tried different fonts but ended up sticking with the defualt as I prefered the look.*/
 body{
     background-color: lightgrey;
     width: 100%;
@@ -22,25 +21,24 @@ body{
     }
     #lukesw-img{
        text-align: left;
-    }
-
+}
 ls-theme{
- background-color: #2969D6;
+ background-color: rgb(8, 103, 245);
 }
 ds-theme{
-    background-color: red;
+    background-color: rgb(212, 0, 0);
 }
 #ls-btn{
     float: left;
     color: yellow;
-    background-color: blue;
+    background-color: rgb(8, 103, 245);
     border: none;
     padding: 10px;
 }
 #ds-btn{
     float: right;
     color: yellow;
-    background-color: red;
+    background-color: rgb(212, 0, 0);
     border: none;
     padding: 10px;
 }
@@ -70,6 +68,7 @@ ds-theme{
   background-color: rgb(0, 0, 0, 0.8);
   position: relative;
 }
+/*------------------------------------------------------User name input*/
 .form{
     text-align: center;
     display: none;
@@ -186,14 +185,14 @@ button:focus{outline: none;
 }
 .lsreturn{
     display: none;
-    color: blue;
-    border: solid blue 5px;
+    color: rgb(8, 103, 245);
+    border: solid rgb(8, 103, 245) 5px;
       margin-top: 15px;
 }
 .dsreturn{
     display: none;
-    color: red;
-    border: solid red 5px;
+    color: rgb(212, 0, 0);
+    border: solid rgb(212, 0, 0) 5px;
     margin-top: 15px;
 }
 @media(min-width: 1000px){
