@@ -5,7 +5,7 @@ $("#ls-btn").click(function() {
  $("#level-1, .main-title, .form, .name-form-ls, .level-btns,.wookiee, #wookieepedia, .dsreturn, p, #lukesw-img").show();
  $("#lukesw-img").css("display", "flex"); //Display flex added to have image to the left whilst other image remains to right of screen, design choice.
  setTimeout(function() {
-  alert("Welcome to the Jedi Acadamy young one. Click 'Begin your training' to be shown the correct form. Then you may try to enter the correct seqeunce and submit your attempt when you are finished. Good luck!")
+  alert("Welcome to the Jedi Acadamy young one. Click 'Begin your training' to be shown the correct form. Then you may try to enter the correct sequence and submit your attempt when you are finished. Good luck!")
  }, 50);
 });
 $("#ds-btn").click(function() {
@@ -13,7 +13,7 @@ $("#ds-btn").click(function() {
  $(".welcome, .name-form-ls").hide();
  $("#level-1, .main-title, .form, .name-form-ds, .level-btns, .wookiee, #wookieepedia, .lsreturn, p, #vader-img").show();
  setTimeout(function() {
-  alert("Welcome to the Sith Temple apprentice. Click 'Begin your training' to be shown the correct the right path. You will then enter the correct seqeunce and submit your effort. Do not fail!")
+  alert("Welcome to the Sith Temple apprentice. Click 'Begin your training' to be shown the right path. You will then enter the correct sequence and submit your effort. Do not fail!")
  }, 50);
 });
 $(".dsreturn").click(function() {
@@ -31,6 +31,7 @@ $(".lsreturn").click(function() {
 $(".level-1-btn").click(function() {
  $(".levels").hide();
  $("#level-1").show();
+ $(".lightsaber-handles").css("pointer-events", "none");
  usersequence1 = [];
  usersequence2 = [];
  usersequence3 = [];
@@ -38,6 +39,7 @@ $(".level-1-btn").click(function() {
 $(".level-2-btn").click(function() {
  $(".levels").hide();
  $("#level-2").show();
+ $(".lightsaber-handles").css("pointer-events", "none");
  usersequence1 = [];
  usersequence2 = [];
  usersequence3 = [];
@@ -45,6 +47,7 @@ $(".level-2-btn").click(function() {
 $(".level-3-btn").click(function() {
  $(".levels").hide();
  $("#level-3").show();
+ $(".lightsaber-handles").css("pointer-events", "none");
  usersequence1 = [];
  usersequence2 = [];
  usersequence3 = [];
@@ -57,8 +60,8 @@ $("#begin1").click(function() {
   $("#begin1").css("visibility", "hidden")
   // $("#reset1").css("visibility","visible")
   $(".level-1-btn, .level-2-btn, .level-3-btn").css("visibility", "hidden")
-  $(".lightsaber-handles").css("pointer-events", "none");
-  usersequence1 = [];
+  $(".lightsaber-handles").css("pointer-events", "none");//Added to prevent user from being able to click the handles before the sequence is active 
+  usersequence1 = [];                                    // to prevent poor UX
   usersequence2 = [];
   usersequence3 = [];
  };
@@ -118,7 +121,7 @@ $("#begin1").click(function() {
   $("#begin1").css("visibility", "visible")
   $(".level-1-btn, .level-2-btn, .level-3-btn,.submit1").css("visibility", "visible")
   $(".lightsaber-handles").css("pointer-events", "auto");
- }, 10000);
+ }, 12000);
 });
 // ------------------------------------------------------------- 2nd Sequence
 $("#begin2").click(function() {
@@ -127,8 +130,8 @@ $("#begin2").click(function() {
   $("#reset2").css("visibility", "visible")
   $(".level-1-btn, .level-2-btn, .level-3-btn").css("visibility", "hidden")
   $(".lightsaber-handles").css("pointer-events", "none");
-  usersequence1 = []; // Added so if a user clicked lightsaber handles before being shown the sequence it 
-  usersequence2 = []; //does not adversly affect their gameplay
+  usersequence1 = []; 
+  usersequence2 = []; 
   usersequence3 = [];
  }
  $(".lightsaber-green").css("height", "280px");
@@ -292,7 +295,7 @@ $("#begin3").click(function() {
   $(".lightsaber-handles").css("pointer-events", "auto");
  }, 18000);
 });
-//-------------------------------------------------Lightsaber activate/deactivate function for user. 
+//-------------------------------------------------Lightsaber activate/deactivate function. For user interaction. Sends the click function to the console to be compared to the preset sequences 1, 2 and 3.
 $(".lightsaber-handle-green").click(function() {
  $(".lightsaber-green").css("height", "280px");
  setTimeout(function() {
@@ -362,7 +365,7 @@ $(".lightsaber-handle-orange").click(function() {
  console.log(usersequence2);
  console.log(usersequence3);
 });
-//-------------------------------------------------Lightsaber sequences user interaction for level 1
+//----------------------------------------------------------------------------------------------------Lightsaber sequence comparator for level 1. 
 var sequence1 = [".lightsaber-handle-red", ".lightsaber-handle-green",
  ".lightsaber-handle-blue", ".lightsaber-handle-red",
  ".lightsaber-handle-blue", ".lightsaber-handle-green"
@@ -393,12 +396,12 @@ $(".submit1").click(function() {
    alert("Well done! Try a harder challenge on the next level.");
    usersequence1 = [];
   } else {
-   alert("Failure is not defeat, try again!");
+   alert("Failure is not defeat, focus your mind and try again!");
    usersequence1 = [];
   }
  }
 });
-//-------------------------------------------------Lightsaber sequences user interaction for level 2
+//----------------------------------------------------------------------------------------------------Lightsaber sequence comparator for level 2. 
 var sequence2 = [".lightsaber-handle-green", ".lightsaber-handle-yellow",
  ".lightsaber-handle-blue", ".lightsaber-handle-yellow",
  ".lightsaber-handle-red", ".lightsaber-handle-green", ".lightsaber-handle-red"
@@ -426,14 +429,15 @@ $(".submit2").click(function() {
   console.log(your_result2);
   if (your_result2) {
    $(".level-3-btn").css("pointer-events", "auto");
-   alert("Well done! Try a harder challenge on the next level.");
+   alert("Excellent! You are improving. The next level will be a greater challenge.");
    usersequence2 = []
   } else {
-   alert("Failure is not defeat, try again!");
+   alert("Failure is not defeat, focus your mind and try again!");
   }
  }
  usersequence2 = [];
 });
+//----------------------------------------------------------------------------------------------------Lightsaber sequence comparator for level 3. 
 var sequence3 = [".lightsaber-handle-purple", ".lightsaber-handle-green", ".lightsaber-handle-blue", ".lightsaber-handle-yellow",
  ".lightsaber-handle-green", ".lightsaber-handle-orange", ".lightsaber-handle-red", ".lightsaber-handle-blue", ".lightsaber-handle-orange"
 ];
@@ -459,10 +463,10 @@ $(".submit3").click(function() {
   }
   console.log(your_result3);
   if (your_result3) {
-   alert("Well done! Your training is complete!");
+   alert("Congratulations! Your training is now complete! Now go forth and follow your destiny!");
    usersequence3 = []
   } else {
-   alert("Failure is not defeat, try again!");
+   alert("Failure is not defeat, focus your mind and try again!");
   }
  }
  usersequence3 = [];
