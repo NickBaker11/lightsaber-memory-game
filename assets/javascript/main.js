@@ -472,7 +472,6 @@ $(".submit3").click(function() {
  usersequence3 = [];
 });
 //-------------------------------------------------Active buton so user knows whihch level they are on 
-
 var btnContainer = document.getElementById("lvl-btns");
 var btns = btnContainer.getElementsByClassName("l-btns");
 for (var i = 0; i < btns.length; i++) {

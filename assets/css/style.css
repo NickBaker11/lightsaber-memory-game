@@ -68,7 +68,7 @@ ds-theme{
   background-color: rgb(0, 0, 0, 0.8);
   position: relative;
 }
-/*------------------------------------------------------User name input*/
+/*------------------------------------------------------User name input. Submit disabled as it brings the user back to the 'start' of the page and there is no need to post any information*/
 .form{
     text-align: center;
     display: none;
@@ -153,7 +153,7 @@ ds-theme{
 .lightsaber-orange{
   background-color: orange;
 }
-/*-------------------------------------------------- Buttons*/
+/*-------------------------------------------------- Buttons, allow user access to the differernt parts of the page*/
 button{
     color: yellow;
     background-color: darkgray;
@@ -195,6 +195,8 @@ button:focus{outline: none;
     border: solid rgb(212, 0, 0) 5px;
     margin-top: 15px;
 }
+/*-------------------------------------------------- Media query to increase sizing, else everything would be too small for use on larger than mobile screens*/
+
 @media(min-width: 1000px){
     .lightsaber-handles{
         height: 60px;
@@ -227,7 +229,3 @@ p{
     color: yellow;
     display: none;
 }
-
-
-
-
