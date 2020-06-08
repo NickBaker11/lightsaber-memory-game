@@ -49,10 +49,14 @@ I validated my code using the W3C and Esprima validators.
 * Different screen sizes
     -When increasing the size of the screen, the images adjust so that they are relative to that screen size. The   interactive parts and text do not change size but I believe they are of sufficient size that is does not       negatively affect the user.
     -For mobile devices, the background images are removed using a media query as they stretch too much and         distort.
-    -I sent my live link to friends and family, asking them for feedback and screenshots to see how it looked on    their devices with positive results. This gave me insight on issues to fix for different screen sizes.
+    -I sent my live link to friends and family, asking them for feedback and screenshots to see how it looked on their devices with positive results. This gave me insight on issues to fix for different screen sizes.
 #### Automated Testing
+<<<<<<< HEAD
 * I attempted to create an automated test to check if the arrays the user input are the same as the preset one. I    was unable to successfully implement this and neither of the tests work. I have left the files in which can be     found in assets/testing.
 
+=======
+* I attempted to create an automated test to check if the arrays the user input are the same as the preset one. I was unable to successfully implement this and neither of the tests work. I have left the files in which can be found in assets/testing.
+>>>>>>> 2d903549224a5565f8d8646ccc16fbcbf4eb7d89
 ## Deployment
 I deployed my website using GitHubs GitHub Pages. To do this, I went to the settings in my lightsaber-memory-master repository, scrolled down to the GitHub pages section and click on the 'source' dropdown and selected 'master branch'. GitHub pages then generates the URL automatically. Here is the link- https://nickbaker11.github.io/lightsaber-memory-master/
 
