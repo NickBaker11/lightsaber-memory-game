@@ -1,9 +1,8 @@
 # Lightsaber Memory Game
 This website will be intervactive for the user through the use of a fun memory game that they can play.
-It is based around a sequence of couloured 'lightsabers' which will activate (light up) and then deactivate, in a 
-particular order. The user will then be required to memorise and then successfully copy the sequence by clicking
-on the correct lightsaber. If the user follows the correct pattern then they will be successful and the next level 
-be unlocked.
+It is based around a sequence of coloured 'lightsabers' which will activate (light up) and then deactivate, in a 
+particular order. The user will be required to memorise and then successfully copy the sequence by clicking
+on the correct lightsabers in the correct order. If the user follows the correct pattern then they will be successful, an akert will pop up and tell them so and the next level be unlocked. If unseuccessful, a different alert will pop up encouraging the user to try again.
 
 There will be additional intervactivity where the user can input their name which will be displayed whilst they
 play. They will also be able to change between two background themes- Light or Dark Side. 
@@ -13,9 +12,11 @@ play. They will also be able to change between two background themes- Light or D
 * As a user I want to play the game and get a response as to whether I entered the correct sequence or if I
   got it wrong. I would expect the game to run smoothly and to be built so that I cannot break it accidently.
 * As this memory game is themed, I may want to know more about what inspired it.
+
 #### Wireframe
 Here is a link to my wireframe- https://github.com/NickBaker11/lightsaber-memory-master/blob/master/assets/wireframes/Mockup%20Milestone%20Project%20no.2.pdf
 It can also be found in assets/wireframes in my project
+
 ## Features
 * Theme choice- Clicking on ls-btn or ds-btn allows the user to choose a colour theme, either blue or red. Once      playing the game the user may switch sides to the alternate theme.
 * Name input- There is a text box where the user can enter their name to be displayed whilst they are playing.
@@ -35,6 +36,7 @@ It can also be found in assets/wireframes in my project
 * Esprima - https://esprima.org/demo/validate.html - to validate my JavaScript.
 
 ## Testing
+I validated my code using the W3C and Esprima validators.
 #### Maunual Testing
 * Sequences and buttons
     -Clicking on each of the 'lightsaber-handles' correctly activiates the corresponding 'lightsaber' as expected.
@@ -50,14 +52,15 @@ It can also be found in assets/wireframes in my project
     -I sent my live link to friends and family, asking them for feedback and screenshots to see how it looked on    their devices with positive results. This gave me insight on issues to fix for different screen sizes.
 #### Automated Testing
 * I attempted to create an automated test to check if the arrays the user input are the same as the preset one. I    was unable to successfully implement this and neither of the tests work. I have left the files in which can be     found in assets/testing.
+
 ## Deployment
 I deployed my website using GitHubs GitHub Pages. To do this, I went to the settings in my lightsaber-memory-master repository, scrolled down to the GitHub pages section and click on the 'source' dropdown and selected 'master branch'. GitHub pages then generates the URL automatically. Here is the link- https://nickbaker11.github.io/lightsaber-memory-master/
 
 ## Credits
 #### Code
-* Lines 785-793 in main.js is from W3school https://www.w3schools.com/howto/howto_js_active_element.asp to add an    'active' button.
+* Lines 475-483 in main.js is from W3school https://www.w3schools.com/howto/howto_js_active_element.asp to add an    'active' button.
 #### Media      
-* https://www.soundboard.com/sb/LightsaberSounds for audio effects.
+* https://www.soundboard.com/sb/LightsaberSounds for the coolsaber.mp3 and SaberOn.mp3 audio effects.
 * https://www.pinterest.ie/pin/307441112045747256/ for lukesw.jpg
 * https://www.denofgeek.com/comics/star-wars-marvel-to-explore-darth-vaders-early-days-as-sith-lord/ for             'vader.jpg'
 #### Acknowledgements
